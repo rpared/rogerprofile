@@ -1,0 +1,89 @@
+.background{
+    background-color: rgb(37, 37, 37);
+    color: gray;
+    font-family: Exo;
+    margin-top: 0px;
+
+}
+
+.leftline{
+    border-left: 2px solid #969696;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.footer{
+    border-left: 2px solid #969696;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: small;
+    
+}
+.emailbtn{
+    color: rgb(245, 177, 150);
+    text-decoration: none;
+}
+.emailbtn:hover{
+    color: rgb(255, 255, 255);
+}
+
+.container{
+    margin-left: 20%;
+    font: Exo;
+    
+}
+.rogerpic{
+    height: 200px;
+}
+
+.title{
+    color: rgb(245, 177, 150);
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+.text{
+    margin-top: 0px;
+}
+
+.abtn{
+    text-decoration: none;
+
+    
+}
+
+.wheelimg{
+    height: 25px;
+}
+.btn{
+    background-color: rgb(37, 37, 37);
+    color: #969696;
+    border: 0px;
+    mask-border-outset: 70%;
+    border-top: 2px solid #969696;
+    
+    padding-top: 2px;
+    height: 50px;
+    margin-left: -22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: rgb(255, 255, 255);
+    height: 55px;
+}
+.btn:active{
+    color:darkgrey;
+}
+.btntext{
+    padding-left: 5px;
+    font-family: Exo;
+    font-size: 14px;
+}
