@@ -51,6 +51,8 @@
 
 .abtn{
     text-decoration: none;
+    width: 120px;
+    display: block;
 
     
 }
@@ -64,13 +66,14 @@
     border: 0px;
     mask-border-outset: 70%;
     border-top: 2px solid #969696;
-    
+    display: block;
     padding-top: 2px;
     height: 50px;
+    width: 160px;
     margin-left: -22px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     transition: opacity 0.15s;
     cursor: pointer;
 }
@@ -86,4 +89,21 @@
     padding-left: 5px;
     font-family: Exo;
     font-size: 14px;
+}
+
+.btninactive{
+    background-color: rgb(37, 37, 37);
+    color: rgb(245, 177, 150);
+    border: 0px;
+    mask-border-outset: 70%;
+    border-top: 2px solid #969696;
+    display: block;
+    padding-top: 2px;
+    height: 50px;
+    width: 160px;
+    margin-left: -22px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    transition: opacity 0.15s;
 }
