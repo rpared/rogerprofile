@@ -51,7 +51,7 @@
 
 .abtn{
     text-decoration: none;
-    width: 160px;
+    width: 170px;
     display: block;
 
     
@@ -69,7 +69,7 @@
     display: block;
     padding-top: 2px;
     height: 50px;
-    width: 160px;
+    width: 170px;
     margin-left: -22px;
     display: flex;
     align-items: center;
@@ -100,7 +100,7 @@
     display: block;
     padding-top: 2px;
     height: 50px;
-    width: 160px;
+    width: 170px;
     margin-left: -22px;
     display: flex;
     align-items: center;
@@ -139,9 +139,12 @@
     margin-left: 20px;
     margin-top: 22px;
     margin-bottom: 30px;
-    
-    
     vertical-align: top;
+    max-width: 100%;
+    height: auto;
+    
+    
+    
 }
 .aopus:hover{
     opacity: 0.4;
