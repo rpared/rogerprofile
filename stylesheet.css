@@ -137,11 +137,13 @@
 
 .aopus{
     margin-left: 20px;
+    margin-right: 5px;
     margin-top: 22px;
     margin-bottom: 30px;
     vertical-align: top;
     max-width: 100%;
     height: auto;
+    max-height: 80px;
     
     
     
