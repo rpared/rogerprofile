@@ -1,166 +1,68 @@
-.background{
-    background-color: rgb(37, 37, 37);
-    color: gray;
-    font-family: Exo;
-    margin-top: 0px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Personal Profile">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <title>Recent Work Reel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="background">
+  <div class="container">
+    <div class="leftline">
+    <a class="indexbtn" href="index.html">
+    <img class="rogerpic" src="images/rogerpic.png" alt="Roger Paredes">
+     <h1 class="title">Roger Paredes</h1></a> 
+    <p class ="text">
+        Designer & Content Creator
+    </p>
+    </div>
+  <div class="leftline">
+      
+      <a class="abtn" href="CV2022_RogerParedes.pdf" target="_blank">
+        <button class="btn">
+          <img class="wheelimg" src="images/circle.png" alt="CV">
+          <span class="btntext">Download CV</span>  
+        
+        </button>
 
-}
+      </a>
+     <br>
+     
+      <button class="btninactive">
+        
+      <img class="wheelimg" src="images/circle.png" alt="Reel">
+      <span class="btntext">Recent Work Reel</span>  
+      </button> 
+     
+      <div class="videoResponsive">
+      <iframe width="100%" height="480px"
+      src="https://www.youtube.com/embed/olBVt3xlsTA?controls=1">
+      </iframe> 
+      </div>
+      
+      
+      <a href="https://www.costra.ec" target="_blank">
+      <img class="costrabrand" src="images/costrabrand.png" alt="Costra">
+      </a>
+      
 
-.leftline{
-    border-left: 2px solid #969696;
-    padding: 5px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    
-}
+     <a class="abtn" href="ContentCreation.html" target="_self">
+      <button class="btn">
+      <img class="wheelimg" src="images/circle.png" alt="Content Creation">
+      <span class="btntext">Content Creation</span>  
+      </button>
+    </a>
+      <br><br>
 
-.footer{
-    border-left: 2px solid #969696;
-    padding: 5px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: small;
-    
-}
-.emailbtn{
-    color: rgb(245, 177, 150);
-    text-decoration: none;
-}
-.emailbtn:hover{
-    color: rgb(255, 255, 255);
-}
+  </div>
 
-.container{
-    margin-left: 20%;
-    font: Exo;
-    
-}
-.rogerpic{
-    height: 200px;
-}
+  <p class="footer"> <a class="emailbtn" href="mailto:rparedes@costra.ec">E-mail </a> <br> Roger Paredes - 2022</p>
+</div>
+</body>
 
-.title{
-    color: rgb(245, 177, 150);
-    margin-top: 2px;
-    margin-bottom: 0px;
-}
-
-.text{
-    margin-top: 0px;
-}
-
-.abtn{
-    text-decoration: none;
-    width: 170px;
-    display: block;
-
-    
-}
-
-.wheelimg{
-    height: 25px;
-}
-.btn{
-    background-color: rgb(37, 37, 37);
-    color: #969696;
-    border: 0px;
-    mask-border-outset: 70%;
-    border-top: 2px solid #969696;
-    display: block;
-    padding-top: 2px;
-    height: 50px;
-    width: 170px;
-    margin-left: -22px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    transition: opacity 0.15s;
-    cursor: pointer;
-}
-
-.btn:hover{
-    color: rgb(255, 255, 255);
-    height: 55px;
-}
-.btn:active{
-    color:darkgrey;
-}
-.btntext{
-    padding-left: 5px;
-    font-family: Exo;
-    font-size: 14px;
-}
-
-.btninactive{
-    background-color: rgb(37, 37, 37);
-    color: rgb(245, 177, 150);
-    border: 0px;
-    mask-border-outset: 70%;
-    border-top: 2px solid #969696;
-    display: block;
-    padding-top: 2px;
-    height: 50px;
-    width: 170px;
-    margin-left: -22px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    transition: opacity 0.15s;
-}
-
-.videoResponsive {
-    
-    padding-bottom:30%;
-    padding-left: 20%;
-    
-  height:auto;
-  position:relative;
-    padding-top:30px;
-    overflow:hidden;
-}
-.videoResponsive iframe, 
-.videoResponsive object, 
-.videoResponsive embed {
-    position:absolute;
-    left:1%;
-  top:0;
-    border: 0px;
-    width:100%;
-    height:100%;
-    max-width: 720px;
-    max-height: 480px;
-}
-
-.indexbtn{
-    text-decoration: none;
-}
-
-.costrabrand {
-    display: block;
-    max-height: 45px;
-    max-width: 100%;
-    margin-left: 20px;
-    margin-top: 22px;
-    cursor: pointer;
-    margin-bottom: 40px;
-}
-
-.costrabrand:hover{
-    opacity:0.4;
-}
-
-.aopus{
-    margin-left: 20px;
-    margin-right: 5px;
-    margin-top: 22px;
-    margin-bottom: 30px;
-    vertical-align: top;
-    max-width: 100%;
-    height: auto;
-    max-height: 80px;
-    
-}
-.aopus:hover{
-    opacity: 0.4;
-    
-}
+</html>
