@@ -152,15 +152,28 @@
 .aopus{
     margin-left: 20px;
     margin-right: 5px;
-    margin-top: 22px;
+    margin-top: 12px;
     margin-bottom: 30px;
     vertical-align: top;
     max-width: 100%;
     height: auto;
     max-height: 80px;
     
+    
+    
 }
 .aopus:hover{
     opacity: 0.4;
     
+}
+
+a{
+    text-decoration: none;
+}
+
+.projectinfo{
+    font-size:9pt;
+    font-style: italic;
+    margin-left: 10px; 
+    margin-bottom: 8px;
 }
