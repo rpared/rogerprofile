@@ -136,7 +136,7 @@
 }
 
 .costrabrand {
-    display: block;
+    display: inline-block;
     max-height: 45px;
     max-width: 100%;
     margin-left: 20px;
