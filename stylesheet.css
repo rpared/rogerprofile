@@ -234,3 +234,17 @@ a{
     margin-left: 10px; 
     margin-bottom: 8px;
 }
+
+.socialmedia{
+    scale: 60%;
+    margin: -0.5em;
+    filter: grayscale(1);
+    
+    
+}
+
+.socialmedia:hover{
+    scale: 60%;
+    margin: -0.5em;
+    filter: none;
+}
