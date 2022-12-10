@@ -76,11 +76,12 @@
     justify-content: left;
     transition: opacity 0.15s;
     cursor: pointer;
+    
 }
 
 .btn:hover{
     color: rgb(255, 255, 255);
-    height: 55px;
+    height: 53px;
 }
 .btn:active{
     color:darkgrey;
@@ -108,6 +109,18 @@
     transition: opacity 0.15s;
 }
 
+#about {
+    background-color: #505050;
+    color: #c9c9c9;
+    padding: 1.2em 1.2em 0.8em 1.2em;
+    max-width: 650px;
+    margin-left: 0.5em;
+}
+
+#about li{
+    margin-left: -1em;
+}
+
 .videoResponsive {
     
     padding-bottom:30%;
@@ -129,6 +142,50 @@
     height:100%;
     max-width: 720px;
     max-height: 480px;
+}
+
+.showcase{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.4em;
+    margin-top: 0.8em;
+    max-width: fit-content;
+    padding: 1em 1em 1em 1em;
+}
+
+.showcase a{
+    background-color: #505050;
+    border: 1.2em solid #505050;
+    padding: 0;
+    position: relative;
+}
+.showcase a:hover{
+    opacity: 0.8;
+}
+a .tooltip{
+    position: absolute;
+    background-color: #282828;
+    padding: 0.3em;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -0.5em;
+    left: 4.7em;
+    text-shadow: 1 1 #505050;
+    opacity: 0;
+}
+
+a:hover .tooltip{
+    position: absolute;
+    background-color: #282828;
+    padding: 0.3em;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -0.5em;
+    left: 4.7em;
+    text-shadow: 1 1 #505050;
+    opacity: 0.8;
 }
 
 .indexbtn{
