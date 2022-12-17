@@ -3,7 +3,12 @@
     color: gray;
     font-family: Exo;
     margin-top: 0px;
+}
 
+.container{
+    margin-left: 20%;
+    font: Exo;
+    position: relative;      
 }
 
 .leftline{
@@ -11,33 +16,78 @@
     padding: 5px;
     margin-top: 0px;
     margin-bottom: 0px;
-    
 }
 
-.footer{
-    border-left: 2px solid #969696;
-    padding: 5px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: small;
-    
-}
-.emailbtn{
-    color: rgb(245, 177, 150);
-    text-decoration: none;
-}
-.emailbtn:hover{
-    color: rgb(255, 255, 255);
+/*header*/
+
+.header-container{
+   
+    position: relative;
+    height: 202px;
 }
 
-.container{
-    margin-left: 20%;
-    font: Exo;
-    
+    /* .profile.pic element with position relative holds
+    the language button located
+    with position absolute*/
+
+.profile-pic{
+    position: relative;
+    height: 205px;
+
 }
+
+/* Language Button */
+
+.btn-wrapper{
+	position: absolute;
+    left: 3px;
+    top: 170px;
+}
+
+.btn-container{
+    border: 1px solid #969696;
+    border-radius: 20px;
+    width:fit-content;
+    position: relative;
+    box-shadow: 0 0 4px #000;
+    background-color: #96969655 ;
+}
+
+#switch-btn{
+    position: absolute;
+    scale: 95%;
+    left: 0;
+    top: 0;
+    background-color: rgb(245, 177, 150);
+    width: 35px;
+    height: 100%;
+    border-radius: 20px;
+    margin: 0;
+    box-shadow: 0 0 2px rgb(70, 70, 70);;
+    transition: 0.3s;
+}
+
+.toggle-btn{
+    background-color:transparent;
+    position: relative;
+    text-align: center;
+    outline: none;
+    margin: 0;
+    padding: 3px 6px 3px 5px;
+    border:0;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 0 4px #000;
+}
+
 .rogerpic{
     height: 200px;
+    
 }
+
+
+
+/*Body*/
 
 .title{
     color: rgb(245, 177, 150);
@@ -45,13 +95,13 @@
     margin-bottom: 0px;
 }
 
-.text{
+#subtitle{
     margin-top: 0px;
 }
 
 .abtn{
     text-decoration: none;
-    width: 170px;
+    width: 190px;
     display: block;
 
     
@@ -60,6 +110,7 @@
 .wheelimg{
     height: 25px;
 }
+
 .btn{
     background-color: rgb(37, 37, 37);
     color: #969696;
@@ -69,27 +120,28 @@
     display: block;
     padding-top: 2px;
     height: 50px;
-    width: 170px;
+    width: 200px;
     margin-left: -22px;
     display: flex;
     align-items: center;
     justify-content: left;
     transition: opacity 0.15s;
     cursor: pointer;
-    
 }
 
 .btn:hover{
     color: rgb(255, 255, 255);
     height: 53px;
 }
+
 .btn:active{
-    color:darkgrey;
+    color: rgb(245, 177, 150);
 }
 .btntext{
     padding-left: 5px;
     font-family: Exo;
     font-size: 14px;
+    text-align: left;
 }
 
 .btninactive{
@@ -110,6 +162,7 @@
 }
 
 #about {
+    display: none;
     background-color: #505050;
     color: #c9c9c9;
     padding: 1.2em 1.2em 0.8em 1.2em;
@@ -121,13 +174,17 @@
     margin-left: -1em;
 }
 
+/*Reel*/
+
+#reel{
+    display: none;
+}
+
 .videoResponsive {
-    
     padding-bottom:30%;
     padding-left: 20%;
-    
-  height:auto;
-  position:relative;
+    height:auto;
+    position:relative;
     padding-top:30px;
     overflow:hidden;
 }
@@ -136,12 +193,32 @@
 .videoResponsive embed {
     position:absolute;
     left:1%;
-  top:0;
+    top:0;
     border: 0px;
     width:100%;
     height:100%;
     max-width: 720px;
     max-height: 480px;
+}
+
+.costrabrand {
+    display: inline-block;
+    max-height: 45px;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-top: 22px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.costrabrand:hover{
+    opacity:0.4;
+}
+
+/*Content Creation*/
+
+#contentcreation{
+    display: none;
 }
 
 .showcase{
@@ -188,24 +265,6 @@ a:hover .tooltip{
     opacity: 0.8;
 }
 
-.indexbtn{
-    text-decoration: none;
-}
-
-.costrabrand {
-    display: inline-block;
-    max-height: 45px;
-    max-width: 100%;
-    margin-left: 20px;
-    margin-top: 22px;
-    cursor: pointer;
-    margin-bottom: 40px;
-}
-
-.costrabrand:hover{
-    opacity:0.4;
-}
-
 .aopus{
     margin-left: 20px;
     margin-right: 5px;
@@ -214,14 +273,10 @@ a:hover .tooltip{
     vertical-align: top;
     max-width: 100%;
     height: auto;
-    max-height: 80px;
-    
-    
-    
+    max-height: 80px;   
 }
 .aopus:hover{
     opacity: 0.4;
-    
 }
 
 a{
@@ -234,6 +289,25 @@ a{
     margin-left: 10px; 
     margin-bottom: 8px;
 }
+
+/*Footer*/
+
+.footer{
+    border-left: 2px solid #969696;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: small;
+    
+}
+.emailbtn{
+    color: rgb(245, 177, 150);
+    text-decoration: none;
+}
+.emailbtn:hover{
+    color: rgb(255, 255, 255);
+}
+
 
 .socialmedia{
     scale: 60%;
