@@ -8,54 +8,130 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+  <script src="index.js" defer></script>
   <title>Roger Paredes Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="background">
   <main class="container">
     <div class="leftline">
-    <img class="rogerpic" src="images/rogerpic.png" alt="Roger Paredes">
+
+      <header class="header-container">
+       <div class="profile-pic">  
+        <img class="rogerpic" src="images/rogerpic.png" alt="Roger Paredes">
+      
+        <div class="btn-wrapper"> 
+          <div class="btn-container">
+            <div id="switch-btn"></div>
+            <button class="toggle-btn" type="button" onclick="eng_el()">ENG</button>
+            <button class="toggle-btn" type="button" onclick="esp_el()">ESP</button>
+          </div>
+        </div>
+
+       </div>   
+      </header>
     <h1 class="title"> Roger Paredes</h1>
-    <p class ="text">
+    <p id ="subtitle">
         Designer & Content Creator
     </p>
     </div>
-    <p class="leftline">
+    <div class="leftline">
 
-      <a class="abtn" href="About.html" target="_self">
-        <button class="btn">
+      <a class="abtn">
+        <button class="btn" onclick="about_load()">
           <img class="wheelimg" src="images/circle.png" alt="About">
-          <span class="btntext">About</span>  
+          <span class="btntext" id="about-btn">About</span>  
         
         </button>
       </a>
-      <br>      
+
+      <div id="about">
+        Earth citizen, persistent, straightforward, hardworking and nonconformist. To me life is an adventure or an experience, a learning experience.
+        <br>I have 15+ years of experience with branding, overall design, marketing, communication strategies, advertising, content creation, campaign planning and cms websites.
+        <ul>
+           <li>Video content creator.</li> 
+           <li>Enjoy learning, punctuality and paying attention to details.</li> 
+           <li>Love traveling, animals, metal and the gym. I am a vegan, an animal rights activist a metalhead and gym addict.</li>
+           <li>Expanding knowledge in development and coding. Currently studying web development.</li>            
+        </ul>
+      </div>
+
+      <br>
+      <div id="cvdownload">     
       <a class="abtn" href="CV2022_RogerParedes.pdf" target="_blank">
-        <button class="btn">
+        <button class="btn" onclick="collapseothers()">
           <img class="wheelimg" src="images/circle.png" alt="CV">
-          <span class="btntext">Download CV</span>  
+          <span class="btntext" id="cv-btn">Download CV</span>  
         
         </button>
 
       </a>
+    </div>
      <br>
-     <a class="abtn" href="WorkReel.html" target="_self" >
-      <button class="btn">
+     <a class="abtn">
+      <button class="btn" onclick="reel_load()">
       <img class="wheelimg" src="images/circle.png" alt="Reel">
-      <span class="btntext">Recent Work Reel</span>  
+      <span class="btntext" id="reel-btn">Recent Work Reel</span>  
       </button> 
      </a>
+
+     <div id="reel">
+      <div class="videoResponsive">
+      <iframe width="100%" height="480px"
+      src="https://www.youtube.com/embed/olBVt3xlsTA?controls=1">
+      </iframe> 
+      </div>
+              
+      <a href="https://www.costra.ec" target="_blank">
+      <img class="costrabrand" src="images/costrabrand.png" alt="Costra">
+      </a>
+    </div>
+
      <br>
 
-     <a class="abtn" href="ContentCreation.html" target="_self" >
-      <button class="btn">
+     <a class="abtn">
+      <button class="btn" onclick="contentcreation_load()">
       <img class="wheelimg" src="images/circle.png" alt="Content Creation">
-      <span class="btntext">Content Creation</span>  
+      <span class="btntext" id="content-btn">Content Creation</span>  
       </button>
      </a>
-      <br><br>
 
-    </p>
+    <div id="contentcreation">
+      <div id="recent" class="projectinfo">Recent example:</div>
+        <div id="recentvideo" class="videoResponsive">
+          <iframe width="100%" height="480px"
+          src="https://www.youtube.com/embed/74JMs3JTQls?controls=1">
+          </iframe>
+        </div>
+        <div class="showcase">
+            <a href="https://youtu.be/rn8YJqRFa5A" target="_blank"><img src="images/01_Thumb.jpg" alt="No Procrear">
+              <div class="tooltip">(YouTube)</div>
+            </a>
+            <a href="https://youtu.be/KWnEsVY4gPQ" target="_blank"><img src="images/TheShavedBiped_Thumb.jpg" alt="The Shaved Biped">
+              <div class="tooltip">(YouTube)</div>
+            </a>
+            <a href="https://youtu.be/dl2gD5viNqU" target="_blank"><img src="images/PlantsFeelToo_Thumb.jpg" alt="PlantsFeelToo">
+              <div class="tooltip">(YouTube)</div>
+            </a>
+        </div>
+            <br>
+            <div id="projects" class="projectinfo">Projects:</div>
+              <a href="https://www.apocalypsisopus.com/93/" target="_blank">
+                  <img class="aopus" src="images/APOOPUS_iso4Videos.png" alt="Apocalypsis Opus" height="80">
+              </a>
+              <a href="https://www.youtube.com/channel/UCH3WXvuzRrFNVxgONLvCZHw" target="_blank">
+                  <img class="aopus" src="images/Brand.png" alt="Bípedo Rasurado" height="80">
+              </a>
+              <a href="https://www.youtube.com/channel/UC0EyoxDgjXsPl4_faPk_8Lw" target="_blank">
+                  <img class="aopus" src="images/ShavedBipedBrand.png" alt="Shaved Biped" height="50">
+              </a>
+              <br><br>
+            
+    </div>
+  
+
+    </div>
 
   <footer class="footer"> <a class="emailbtn" href="mailto:rparedes@costra.ec">E-mail </a><br>
     <a href="https://www.instagram.com/bipedorasurado/" target="_blank"><img class="socialmedia" src="images/instagram.png" alt="Instagram"></a>
