@@ -43,7 +43,7 @@ let cvENG = `<a class="abtn" href="CV2022_RogerParedes.pdf" target="_blank">
 let cvESP = `<a class="abtn" href="CV2022_RogerParedes_ESP.pdf" target="_blank">
 <button class="btn" onclick="collapseothers()">
   <img class="wheelimg" src="images/circle.png" alt="CV">
-  <span class="btntext" id="cv-btn">Download CV</span>  
+  <span class="btntext" id="cv-btn">Descargar CV</span> 
 </button></a>`;
 
 let videoIframeENG = `<iframe width="100%" height="480px" src="https://www.youtube.com/embed/74JMs3JTQls?controls=1"></iframe>`;
