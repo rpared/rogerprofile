@@ -11,6 +11,7 @@ let projectsText = document.getElementById("projects");
 let recentVid = document.getElementById("recentvideo");
 let showcase = document.querySelector(".showcase");
 let cvDownload = document.querySelector("#cvdownload");
+let examplesText = document.getElementById("examples");
 
 //DOM Variables - collapsing menus or sections
 let aboutDisplay = document.getElementById("about_load");
@@ -43,7 +44,7 @@ let cvENG = `<a class="abtn" href="CV2022_RogerParedes.pdf" target="_blank">
 let cvESP = `<a class="abtn" href="CV2022_RogerParedes_ESP.pdf" target="_blank">
 <button class="btn" onclick="collapseothers()">
   <img class="wheelimg" src="images/circle.png" alt="CV">
-  <span class="btntext" id="cv-btn">Descargar CV</span> 
+  <span class="btntext" id="cv-btn">Descargar CV</span>  
 </button></a>`;
 
 let videoIframeENG = `<iframe width="100%" height="480px" src="https://www.youtube.com/embed/74JMs3JTQls?controls=1"></iframe>`;
@@ -59,7 +60,7 @@ let showcaseESP = `<a href="https://youtu.be/rn8YJqRFa5A" target="_blank"><img s
 <div class="tooltip">Abrir YouTube</div></a>
 <a id="showcase2" href="https://youtu.be/TTo1nsCuFWE" target="_blank"><img src="images/31_Thumb.jpg" alt="31. El Veganismo">
 <div class="tooltip">Abrir YouTube</div></a>
-<a href="https://youtu.be/dl2gD5viNqU" target="_blank"><img src="images/PlantsFeelToo_Thumb.jpg" alt="PlantsFeelToo">
+<a href="https://youtu.be/qr192wMBPxU" target="_blank"><img src="images/LasPlantasSienten_Thumb.jpg" alt="Las Plantas también Sienten">
 <div class="tooltip">Abrir YouTube</div></a>`;
 
 
@@ -77,6 +78,7 @@ function eng_el(){
     projectsText.textContent = "Projects:";
     recentVid.innerHTML = videoIframeENG;
     showcase.innerHTML = showcaseENG;
+    examplesText.textContent = "Examples:";
 }
 
 function esp_el(){
@@ -92,6 +94,7 @@ function esp_el(){
     projects.textContent = "Proyectos:";
     recentVid.innerHTML = videoIframeESP;
     showcase.innerHTML = showcaseESP;
+    examplesText.textContent = "Ejemplos:";
 }
 
 /*function to load About Text changing CSS style display from none to block*/
