@@ -226,9 +226,14 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -0.4em;
-    margin-top: 0.8em;
+    margin-top: -0.1em;
     max-width: fit-content;
     padding: 1em 1em 1em 1em;
+}
+
+#examples{
+    margin-top: 1em;
+    margin-bottom: -0.5em;
 }
 
 .showcase a{
