@@ -1,6 +1,8 @@
 .background{
+    /* background-color: #ddd;
+    color: #777; */
     background-color: rgb(37, 37, 37);
-    color: gray;
+    color: #969696;
     font-family: Exo;
     margin-top: 0px;
 }
@@ -94,10 +96,10 @@
 }
 
 
-
 /*Body*/
 
 .title{
+    /* color:rgb(158, 125, 112); */
     color: rgb(245, 177, 150);
     margin-top: 2px;
     margin-bottom: 0px;
@@ -107,28 +109,34 @@
     margin-top: 0px;
 }
 
-.abtn{
-    text-decoration: none;
-    width: 190px;
-    display: block;
-
-    
-}
-
 .wheelimg{
     height: 25px;
+    filter: invert(45%);
+}
+.menu_btn{
+    border: 0;
+    background-color: #28282800;
+    margin: none;
+}
+
+a{
+    text-decoration: none;
+    background-color: none;
+    color: currentColor;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .btn{
     background-color: rgb(37, 37, 37);
     color: #969696;
     border: 0px;
-    mask-border-outset: 70%;
     border-top: 2px solid #969696;
     display: block;
     padding-top: 2px;
     height: 50px;
-    width: 200px;
+    width: 205px;
     margin-left: -22px;
     display: flex;
     align-items: center;
@@ -146,7 +154,15 @@
     color: rgb(245, 177, 150);
 }
 .btntext{
-    padding-left: 5px;
+    padding-left: 7px;
+    font-family: Exo;
+    font-size: 14px;
+    text-align: left;
+}
+
+.btntext_cv{
+    padding-left: 7px;
+    padding-top: 3px;
     font-family: Exo;
     font-size: 14px;
     text-align: left;
@@ -161,7 +177,7 @@
     display: block;
     padding-top: 2px;
     height: 50px;
-    width: 170px;
+    width: 205px;
     margin-left: -22px;
     display: flex;
     align-items: center;
@@ -217,6 +233,7 @@
     margin-top: 22px;
     cursor: pointer;
     margin-bottom: 40px;
+    filter: drop-shadow(0 0 8px #3b3b3b);
 }
 
 .costrabrand:hover{
@@ -252,6 +269,11 @@
 .showcase a:hover{
     opacity: 0.8;
 }
+
+.showcase a img{
+    border: 0.1em solid #505050;
+}
+
 a .tooltip{
     position: absolute;
     background-color: #282828;
@@ -278,6 +300,12 @@ a:hover .tooltip{
     opacity: 0.8;
 }
 
+#projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .aopus{
     margin-left: 20px;
     margin-right: 5px;
@@ -286,14 +314,12 @@ a:hover .tooltip{
     vertical-align: top;
     max-width: 100%;
     height: auto;
-    max-height: 80px;   
-}
-.aopus:hover{
-    opacity: 0.4;
+    max-height: 80px;
+    filter:drop-shadow(0 0 8px #3b3b3b);
 }
 
-a{
-    text-decoration: none;
+.aopus:hover{
+    opacity: 0.4;
 }
 
 .projectinfo{
@@ -311,27 +337,35 @@ a{
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: small;
-    
 }
 .emailbtn{
+    /* color:rgb(158, 125, 112); */
     color: rgb(245, 177, 150);
     text-decoration: none;
+    display: block;
+    margin-bottom: -10px;
 }
 .emailbtn:hover{
     color: rgb(255, 255, 255);
+    display: block;
 }
-
 
 .socialmedia{
-    scale: 60%;
-    margin: -0.5em;
-    filter: grayscale(1);
-    
-    
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: -10px;
 }
 
-.socialmedia:hover{
-    scale: 60%;
+.socialmediaicon a img{
+    scale: 70%;
+    padding: 0.2em;
+    margin: -0.5em;
+    filter: grayscale(1);    
+}
+
+.socialmedia a img:hover{
     margin: -0.5em;
     filter: none;
+    cursor: pointer;
 }
