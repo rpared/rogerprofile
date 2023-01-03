@@ -4,12 +4,14 @@
   <meta charset="utf-8">
   <meta name="description" content="Personal Profile">
   <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="darkmode.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 
   <script src="index.js" defer></script>
+  <script src="darkmode.js" defer></script>
   <title>Roger Paredes Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -27,6 +29,13 @@
             <button class="toggle-btn" type="button" onclick="eng_el()">ENG</button>
             <button class="toggle-btn" type="button" onclick="esp_el()">ESP</button>
           </div>
+        </div>
+
+        <div id="color_mode_container">
+          <button id="darkmode_btn" onclick="dark_mode()">
+              <img id="darkmode_pic" src="images/lightmode_icon.png" alt="Dark mode">
+              <div class="tooltip_text">Light mode</div>    
+          </button>
         </div>
 
        </div>   
@@ -59,14 +68,15 @@
 
       <br>
       <div id="cvdownload">     
-      <a class="abtn" href="CV2022_RogerParedes.pdf" target="_blank">
-        <button class="btn" onclick="collapseothers()">
+      
+        <button class="btn" id="cv-el" onclick="collapseothers()">
+          <a href="CV2022_RogerParedes.pdf" target="_blank">
           <img class="wheelimg" src="images/circle.png" alt="CV">
-          <span class="btntext" id="cv-btn">Download CV</span>  
-        
+          <span class="btntext_cv">Download CV</span>  
+          </a>
         </button>
 
-      </a>
+      
     </div>
      <br>
      <a class="abtn">
@@ -104,7 +114,7 @@
           src="https://www.youtube.com/embed/74JMs3JTQls?controls=1">
           </iframe>
         </div>
-      <div id="examples" class="projectinfo">Examples:</div>
+        <div id="examples" class="projectinfo">Examples:</div>
         <div class="showcase">
             <a href="https://youtu.be/rn8YJqRFa5A" target="_blank"><img src="images/01_Thumb.jpg" alt="No Procrear">
               <div class="tooltip">(YouTube)</div>
@@ -117,7 +127,9 @@
             </a>
         </div>
             <br>
-            <div id="projects" class="projectinfo">Projects:</div>
+          
+            <div id="projecttext" class="projectinfo">Projects:</div>
+            <div id="projects">
               <a href="https://www.apocalypsisopus.com/93/" target="_blank">
                   <img class="aopus" src="images/APOOPUS_iso4Videos.png" alt="Apocalypsis Opus" height="80">
               </a>
@@ -127,17 +139,21 @@
               <a href="https://www.youtube.com/channel/UC0EyoxDgjXsPl4_faPk_8Lw" target="_blank">
                   <img class="aopus" src="images/ShavedBipedBrand.png" alt="Shaved Biped" height="50">
               </a>
+            </div>
               <br><br>
             
     </div>
-  
+    <br>
 
     </div>
 
-  <footer class="footer"> <a class="emailbtn" href="mailto:rparedes@costra.ec">E-mail </a><br>
-    <a href="https://www.instagram.com/bipedorasurado/" target="_blank"><img class="socialmedia" src="images/instagram.png" alt="Instagram"></a>
-    <a href="https://www.linkedin.com/in/roger-paredes-294aa1119/" target="_blank"><img class="socialmedia" src="images/linkedin.png" alt="LinkedIn"></a>
-    <br> Roger Paredes - 2022
+  <footer class="footer"> 
+    <a class="emailbtn" href="mailto:rparedes@costra.ec">E-mail </a><br>
+    <div class="socialmedia">
+    <div class="socialmediaicon"><a href="https://www.instagram.com/bipedorasurado/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a></div>
+    <div class="socialmediaicon"><a href="https://www.linkedin.com/in/roger-paredes-294aa1119/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></div>
+  </div>
+    <br> Roger Paredes - 2023
   </footer>
   </main>
 </body>
