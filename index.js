@@ -2,15 +2,14 @@
 let switchBtn = document.getElementById("switch-btn");
 let subtitle = document.getElementById("subtitle");
 let aboutBtn = document.getElementById("about-btn");
-let cvBtn = document.getElementById("cv-btn");
 let reelBtn = document.getElementById("reel-btn");
 let contentCreationBtn = document.getElementById("content-btn");
 let aboutText = document.getElementById("about");
 let recentExample = document.getElementById("recent");
-let projectsText = document.getElementById("projects");
+let projectsText = document.querySelector("#projecttext");
 let recentVid = document.getElementById("recentvideo");
 let showcase = document.querySelector(".showcase");
-let cvDownload = document.querySelector("#cvdownload");
+let cvDownload = document.getElementById("cv-el");
 let examplesText = document.getElementById("examples");
 
 //DOM Variables - collapsing menus or sections
@@ -27,7 +26,7 @@ let aboutTextENG = `Earth citizen, persistent, straightforward, hardworking and 
    <li>Love traveling, animals, metal and the gym. I am a vegan, an animal rights activist a metalhead and gym addict.</li>
    <li>Expanding knowledge in development and coding. Currently studying web development.</li>            
 </ul>`;
-let aboutTextESP = `Ciudadano de la tierra, perseverante, franco, trabajador e inconforme. Para mí la vida es una aventura o una experiencia, una experiencia de aprendizaje.
+let aboutTextESP = `Ciudadano de la Tierra, perseverante, franco, trabajador e inconforme. Para mí la vida es una aventura o una experiencia, una experiencia de aprendizaje.
 <br>Tengo más de 15 años de experiencia en branding, diseño general, marketing, estrategias de comunicación, publicidad, creación de contenido, planificación de campañas y portales cms.
 <ul>
    <li>Creador de contenido audiovisual.</li> 
@@ -36,16 +35,16 @@ let aboutTextESP = `Ciudadano de la tierra, perseverante, franco, trabajador e i
    <li>Expandiendo mi conocimiento en desarrollo y programación. Actualmente estudio desarrollo web.</li>            
 </ul>`;
 
-let cvENG = `<a class="abtn" href="CV2022_RogerParedes.pdf" target="_blank">
-<button class="btn" onclick="collapseothers()">
+let cvENG = `<a href="CV2022_RogerParedes.pdf" target="_blank">
   <img class="wheelimg" src="images/circle.png" alt="CV">
-  <span class="btntext" id="cv-btn">Download CV</span>  
-</button></a>`;
-let cvESP = `<a class="abtn" href="CV2022_RogerParedes_ESP.pdf" target="_blank">
-<button class="btn" onclick="collapseothers()">
+  <span class="btntext_cv">Download CV</span>  
+</a>`;
+let cvESP = `<a href="CV2022_RogerParedes_ESP.pdf" target="_blank">
   <img class="wheelimg" src="images/circle.png" alt="CV">
-  <span class="btntext" id="cv-btn">Descargar CV</span>  
-</button></a>`;
+  <span class="btntext_cv">Descargar CV</span>  
+</a>`;
+
+
 
 let videoIframeENG = `<iframe width="100%" height="480px" src="https://www.youtube.com/embed/74JMs3JTQls?controls=1"></iframe>`;
 let videoIframeESP = `<iframe width="100%" height="480px" src="https://www.youtube.com/embed/gNNoj58m9nU?controls=1"></iframe>`;
@@ -69,7 +68,6 @@ function eng_el(){
     switchBtn.style.left = '0px';
     subtitle.textContent = "Designer & Content Creator";
     aboutBtn.textContent = "About";
-    cvBtn.textContent = "Download CV";
     reelBtn.textContent = "Recent Work Reel";
     contentCreationBtn.textContent = "Content Creation";
     aboutText.innerHTML = aboutTextENG;
@@ -85,13 +83,12 @@ function esp_el(){
     switchBtn.style.left = '36px';
     subtitle.textContent = "Diseñador y Creador de Contenido";
     aboutBtn.textContent = "Acerca de";
-    cvBtn.textContent = "Descargar CV";
     reelBtn.textContent = "Reel de Trabajo Reciente";
     contentCreationBtn.textContent = "Creación de Contenido";
     aboutText.innerHTML = aboutTextESP;
     cvDownload.innerHTML = cvESP;
     recentExample.textContent = "Ejemplo reciente:";
-    projects.textContent = "Proyectos:";
+    projectsText.textContent = "Proyectos:";
     recentVid.innerHTML = videoIframeESP;
     showcase.innerHTML = showcaseESP;
     examplesText.textContent = "Ejemplos:";
