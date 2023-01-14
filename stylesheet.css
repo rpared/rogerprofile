@@ -126,6 +126,7 @@ a{
     margin: 0;
     padding: 0;
     display: flex;
+    vertical-align: middle;
 }
 
 .btn{
@@ -133,7 +134,6 @@ a{
     color: #969696;
     border: 0px;
     border-top: 2px solid #969696;
-    display: block;
     padding-top: 2px;
     height: 50px;
     width: 205px;
@@ -143,6 +143,7 @@ a{
     justify-content: left;
     transition: opacity 0.15s;
     cursor: pointer;
+    
 }
 
 .btn:hover{
@@ -197,6 +198,7 @@ a{
 #about li{
     margin-left: -1em;
 }
+
 
 /*Reel*/
 
