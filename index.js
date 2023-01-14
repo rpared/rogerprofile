@@ -11,6 +11,7 @@ let recentVid = document.getElementById("recentvideo");
 let showcase = document.querySelector(".showcase");
 let cvDownload = document.getElementById("cv-el");
 let examplesText = document.getElementById("examples");
+let language = "eng";
 
 //DOM Variables - collapsing menus or sections
 let aboutDisplay = document.getElementById("about_load");
@@ -35,16 +36,12 @@ let aboutTextESP = `Ciudadano de la Tierra, perseverante, franco, trabajador e i
    <li>Expandiendo mi conocimiento en desarrollo y programación. Actualmente estudio desarrollo web.</li>            
 </ul>`;
 
-let cvENG = `<a href="CV2022_RogerParedes.pdf" target="_blank">
-  <img class="wheelimg" src="images/circle.png" alt="CV">
+let cvENG = `<img class="wheelimg" src="images/circle.png" alt="CV">
   <span class="btntext_cv">Download CV</span>  
-</a>`;
-let cvESP = `<a href="CV2022_RogerParedes_ESP.pdf" target="_blank">
-  <img class="wheelimg" src="images/circle.png" alt="CV">
+`;
+let cvESP = `<img class="wheelimg" src="images/circle.png" alt="CV">
   <span class="btntext_cv">Descargar CV</span>  
-</a>`;
-
-
+`;
 
 let videoIframeENG = `<iframe width="100%" height="480px" src="https://www.youtube.com/embed/74JMs3JTQls?controls=1"></iframe>`;
 let videoIframeESP = `<iframe width="100%" height="480px" src="https://www.youtube.com/embed/gNNoj58m9nU?controls=1"></iframe>`;
@@ -77,6 +74,7 @@ function eng_el(){
     recentVid.innerHTML = videoIframeENG;
     showcase.innerHTML = showcaseENG;
     examplesText.textContent = "Examples:";
+    language = "eng";
 }
 
 function esp_el(){
@@ -92,6 +90,7 @@ function esp_el(){
     recentVid.innerHTML = videoIframeESP;
     showcase.innerHTML = showcaseESP;
     examplesText.textContent = "Ejemplos:";
+    language = "esp";
 }
 
 /*function to load About Text changing CSS style display from none to block*/
