@@ -12,6 +12,7 @@
 
   <script src="index.js" defer></script>
   <script src="darkmode.js" defer></script>
+  <script src="password.js" defer ></script>
   <title>Roger Paredes Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -69,13 +70,11 @@
       <br>
       <div id="cvdownload">     
       
-        <button class="btn" id="cv-el" onclick="collapseothers()">
-          <a href="CV2022_RogerParedes.pdf" target="_blank">
+        <button class="btn" id="cv-el" onclick="collapseothers(), cvPassword()">
           <img class="wheelimg" src="images/circle.png" alt="CV">
           <span class="btntext_cv">Download CV</span>  
-          </a>
+          
         </button>
-
       
     </div>
      <br>
