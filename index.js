@@ -31,7 +31,7 @@ let aboutTextESP = `Ciudadano de la Tierra, perseverante, franco, trabajador e i
 <br>Tengo más de 15 años de experiencia en branding, diseño general, marketing, estrategias de comunicación, publicidad, creación de contenido, planificación de campañas y portales cms.
 <ul>
    <li>Creador de contenido audiovisual.</li> 
-   <li>Enjoy learning, punctuality and paying attention to details.</li> 
+   <li>Disfruto aprender, la puntualidad y prestar atención a los detalles.</li> 
    <li>Amo viajar, los animales, el metal y el gimnasio. Soy vegano, activista por los derechos de los animales, metalero y adicto al gimnasio.</li>
    <li>Expandiendo mi conocimiento en desarrollo y programación. Actualmente estudio desarrollo web.</li>            
 </ul>`;
