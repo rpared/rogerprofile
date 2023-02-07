@@ -23,7 +23,7 @@ let aboutTextENG = `Earth citizen, persistent, straightforward, hardworking and 
 <br>I have 15+ years of experience with branding, overall design, marketing, communication strategies, advertising, content creation, campaign planning and cms websites.
 <ul>
    <li>Video content creator.</li> 
-   <li>Disfruto aprender, la puntualidad y prestar atención a los detalles.</li> 
+   <li>Enjoy learning, punctuality and paying attention to details.</li> 
    <li>Love traveling, animals, metal and the gym. I am a vegan, an animal rights activist a metalhead and gym addict.</li>
    <li>Expanding knowledge in development and coding. Currently studying web development.</li>            
 </ul>`;
