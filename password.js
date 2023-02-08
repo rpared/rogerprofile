@@ -14,8 +14,7 @@ function cvPassword(){
     while(response != password && !error && !null){
         if(entryCount < entryLimit){
              response = window.prompt(
-`Enter Password
-(It is Roger's IRCC Application Number)`);
+`Enter Password`);
              entryCount++;
         } else {error = true;}
         if (response === null){ entryCount = 0; error = false; return;}
@@ -36,8 +35,7 @@ function cvPassword(){
    while(response != password && !error){
     if(entryCount < entryLimit){
          response = window.prompt(
-`Ingrese la contraseña
-(Es el número de aplicación de IRCC de Roger)`);
+`Ingrese la contraseña`);
          entryCount++;
     } else { error = true;}
     if (response === null){ entryCount = 0; error = false; return;}
