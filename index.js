@@ -2,9 +2,12 @@
 let switchBtn = document.getElementById("switch-btn");
 let subtitle = document.getElementById("subtitle");
 let aboutBtn = document.getElementById("about-btn");
-let reelBtn = document.getElementById("reel-btn");
+let workBtn = document.getElementById("work-btn");
 let contentCreationBtn = document.getElementById("content-btn");
 let aboutText = document.getElementById("about");
+let javaProjectText = document.getElementById("javaproject");
+let reelText = document.getElementById("reel");
+let websiteText = document.getElementById("website");
 let recentExample = document.getElementById("recent");
 let projectsText = document.querySelector("#projecttext");
 let recentVid = document.getElementById("recentvideo");
@@ -15,7 +18,7 @@ let language = "eng";
 
 //DOM Variables - collapsing menus or sections
 let aboutDisplay = document.getElementById("about_load");
-let reelDisplay = document.getElementById("reel_load");
+let workDisplay = document.getElementById("reel_load");
 let contentCreationDisplay = document.getElementById("contentcreation");
 
 //translations
@@ -65,15 +68,18 @@ function eng_el(){
     switchBtn.style.left = '0px';
     subtitle.textContent = "Designer & Content Creator";
     aboutBtn.textContent = "About";
-    reelBtn.textContent = "Recent Work Reel";
+    workBtn.textContent = "Recent Work Reel";
     contentCreationBtn.textContent = "Content Creation";
     aboutText.innerHTML = aboutTextENG;
     cvDownload.innerHTML = cvENG;
-    recentExample.textContent = "Recent example:";
-    projectsText.textContent = "Projects:";
+    javaProjectText.innerHTML = `<span>------</span> Javascript online statistics project:</p>`
+    reelText.innerHTML = `<span>------</span> 2021 Work Reel:</p>`;
+    websiteText.innerHTML = `<span>------</span> Corp. Website:</p>`; 
+    recentExample.innerHTML = `<span>------</span> Recent example:`;
+    projectsText.innerHTML = `<span>------</span> Projects:`;
     recentVid.innerHTML = videoIframeENG;
     showcase.innerHTML = showcaseENG;
-    examplesText.textContent = "Examples:";
+    examplesText.innerHTML = `<span>------</span> Examples:`;
     language = "eng";
 }
 
@@ -81,15 +87,18 @@ function esp_el(){
     switchBtn.style.left = '36px';
     subtitle.textContent = "Diseñador y Creador de Contenido";
     aboutBtn.textContent = "Acerca de";
-    reelBtn.textContent = "Reel de Trabajo Reciente";
+    workBtn.textContent = "Trabajo Reciente";
     contentCreationBtn.textContent = "Creación de Contenido";
     aboutText.innerHTML = aboutTextESP;
     cvDownload.innerHTML = cvESP;
-    recentExample.textContent = "Ejemplo reciente:";
-    projectsText.textContent = "Proyectos:";
+    javaProjectText.innerHTML = `<span>------</span> Proyecto de estadísticas en Javascript:</p>`
+    reelText.innerHTML = `<span>------</span> Reel de trabajos 2021:</p>`;
+    websiteText.innerHTML = `<span>------</span> Website Corporativo:</p>`; 
+    recentExample.innerHTML = `<span>------</span> Ejemplo reciente:`;
+    projectsText.innerHTML = `<span>------</span> Proyectos:`;
     recentVid.innerHTML = videoIframeESP;
     showcase.innerHTML = showcaseESP;
-    examplesText.textContent = "Ejemplos:";
+    examplesText.innerHTML = `<span>------</span> Ejemplos:`;
     language = "esp";
 }
 
@@ -102,20 +111,20 @@ function about_load(){
         else{document.querySelector("#about").style.display = "block";
         // document.querySelector("#about-btn").style.color = "rgb(245, 177, 150)";
         aboutDisplay = "loaded";
-        document.querySelector("#reel").style.display = "none";
-        reelDisplay = "unloaded";
+        document.querySelector("#workprojects").style.display = "none";
+        workDisplay = "unloaded";
         document.querySelector("#contentcreation").style.display = "none";
         contentCreationDisplay = "unloaded";
         }
     }
 
 /*function to load Reel changing CSS style display from none to block*/
-function reel_load(){   
-    if (reelDisplay == "loaded"){ 
-        document.querySelector("#reel").style.display = "none";
-        reelDisplay = "unloaded";}
-        else{document.querySelector("#reel").style.display = "block";
-        reelDisplay = "loaded";
+function work_load(){   
+    if (workDisplay == "loaded"){ 
+        document.querySelector("#workprojects").style.display = "none";
+        workDisplay = "unloaded";}
+        else{document.querySelector("#workprojects").style.display = "block";
+        workDisplay = "loaded";
         document.querySelector("#about").style.display = "none";
         aboutDisplay = "unloaded";
         document.querySelector("#contentcreation").style.display = "none";
@@ -132,8 +141,8 @@ function contentcreation_load(){
         contentCreationDisplay = "loaded";
         document.querySelector("#about").style.display = "none";
         aboutDisplay = "unloaded";
-        document.querySelector("#reel").style.display = "none";
-        reelDisplay = "unloaded";
+        document.querySelector("#workprojects").style.display = "none";
+        workDisplay = "unloaded";
         }
     }
 
@@ -141,8 +150,8 @@ function contentcreation_load(){
 function collapseothers(){
     document.querySelector("#about").style.display = "none";
     aboutDisplay = "unloaded";
-    document.querySelector("#reel").style.display = "none";
-    reelDisplay = "unloaded";
+    document.querySelector("#workprojects").style.display = "none";
+    workDisplay = "unloaded";
     document.querySelector("#contentcreation").style.display = "none";
     contentCreationDisplay = "unloaded";
 }

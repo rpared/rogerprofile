@@ -25,7 +25,7 @@ function cvPassword(){
         entryCount = 0;
         error = false;
    } else {
-    window.open("CV2022_RogerParedes.pdf","_blanc");
+    window.open("CV2023_RogerParedes.pdf","_blanc");
    }
    return;
    }
@@ -41,11 +41,11 @@ function cvPassword(){
     if (response === null){ entryCount = 0; error = false; return;}
     }
     if(error){
-    alert("Contacte a Roger pra la contraseña: rparedes@costra.ec");
+    alert("Contacte a Roger para la contraseña: rparedes@costra.ec");
     entryCount = 0;
     error = false;
     } else  {
-    window.open("CV2022_RogerParedes_ESP.pdf","_blanc");
+    window.open("CV2023_RogerParedes_ESP.pdf","_blanc");
     }
     return;
     }
