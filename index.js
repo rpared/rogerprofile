@@ -46,21 +46,27 @@ let cvESP = `<img class="wheelimg" src="images/circle.png" alt="CV">
   <span class="btntext_cv">Descargar CV</span>  
 `;
 
-let videoIframeENG = `<iframe width="100%" height="480px" src="https://www.youtube.com/embed/74JMs3JTQls?controls=1"></iframe>`;
+let videoIframeENG = `<iframe width="100%" height="480px" src="https://www.youtube.com/embed/iC424h6NtyA?controls=1"></iframe>`;
 let videoIframeESP = `<iframe width="100%" height="480px" src="https://www.youtube.com/embed/gNNoj58m9nU?controls=1"></iframe>`;
 
-let showcaseENG = `<a href="https://youtu.be/rn8YJqRFa5A" target="_blank"><img src="images/01_Thumb.jpg" alt="No Procrear">
-<div class="tooltip">Open YouTube</div></a>
+let showcaseENG = `<div class="showcaselink">
+<a href="https://youtu.be/rn8YJqRFa5A" target="_blank"><img src="images/01_Thumb.jpg" alt="Algo está Mal en el Mundo">
+  <div class="tooltip">(YouTube)</div>
+</a></div>
+<div class="showcaselink">
 <a href="https://youtu.be/KWnEsVY4gPQ" target="_blank"><img src="images/TheShavedBiped_Thumb.jpg" alt="The Shaved Biped">
-<div class="tooltip">Open YouTube</div></a>
+  <div class="tooltip">(YouTube)</div>
+</a></div>
+<div class="showcaselink">
 <a href="https://youtu.be/dl2gD5viNqU" target="_blank"><img src="images/PlantsFeelToo_Thumb.jpg" alt="PlantsFeelToo">
-<div class="tooltip">Open YouTube</div></a>`;
-let showcaseESP = `<a href="https://youtu.be/rn8YJqRFa5A" target="_blank"><img src="images/01_Thumb.jpg" alt="No Procrear">
-<div class="tooltip">Abrir YouTube</div></a>
-<a id="showcase2" href="https://youtu.be/TTo1nsCuFWE" target="_blank"><img src="images/31_Thumb.jpg" alt="31. El Veganismo">
-<div class="tooltip">Abrir YouTube</div></a>
-<a href="https://youtu.be/qr192wMBPxU" target="_blank"><img src="images/LasPlantasSienten_Thumb.jpg" alt="Las Plantas también Sienten">
-<div class="tooltip">Abrir YouTube</div></a>`;
+  <div class="tooltip">(YouTube)</div>
+</a></div>`;
+let showcaseESP = `<div class="showcaselink"><a href="https://youtu.be/rn8YJqRFa5A" target="_blank"><img src="images/01_Thumb.jpg" alt="No Procrear">
+<div class="tooltip">YouTube</div></a></div>
+<div class="showcaselink"><a id="showcase2" href="https://youtu.be/TTo1nsCuFWE" target="_blank"><img src="images/31_Thumb.jpg" alt="31. El Veganismo">
+<div class="tooltip">YouTube</div></a></div>
+<div class="showcaselink"><a href="https://youtu.be/qr192wMBPxU" target="_blank"><img src="images/LasPlantasSienten_Thumb.jpg" alt="Las Plantas también Sienten">
+<div class="tooltip">YouTube</div></a></div>`;
 
 
 //Functions on click event to change language
@@ -68,7 +74,7 @@ function eng_el(){
     switchBtn.style.left = '0px';
     subtitle.textContent = "Designer & Content Creator";
     aboutBtn.textContent = "About";
-    workBtn.textContent = "Recent Work Reel";
+    workBtn.textContent = "Recent Work";
     contentCreationBtn.textContent = "Content Creation";
     aboutText.innerHTML = aboutTextENG;
     cvDownload.innerHTML = cvENG;

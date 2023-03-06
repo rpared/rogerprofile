@@ -200,15 +200,16 @@ a{
 }
 
 
-/*Reel*/
+/*Recent Work Projects*/
 
-#reel{
+#workprojects{
     display: none;
 }
 
 .videoResponsive {
     padding-bottom:30%;
     padding-left: 20%;
+    margin-left: 14px;
     height:auto;
     position:relative;
     padding-top:30px;
@@ -226,15 +227,18 @@ a{
     max-width: 720px;
     max-height: 480px;
 }
+.workproject{
+    display: inline-flex;
 
-.costrabrand {
-    display: inline-block;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+.workprojectlogo {
+    display: block;
     max-height: 45px;
     max-width: 100%;
-    margin-left: 20px;
-    margin-top: 22px;
     cursor: pointer;
-    margin-bottom: 40px;
     filter: drop-shadow(0 0 8px #3b3b3b);
 }
 
@@ -251,7 +255,7 @@ a{
 .showcase{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -0.4em;
+    margin-left: 10px;
     margin-top: -0.1em;
     max-width: fit-content;
     padding: 1em 1em 1em 1em;
@@ -262,17 +266,17 @@ a{
     margin-bottom: -0.5em;
 }
 
-.showcase a{
+.showcaselink{
     background-color: #505050;
     border: 1.2em solid #505050;
     padding: 0;
     position: relative;
 }
-.showcase a:hover{
+.showcaselink:hover{
     opacity: 0.8;
 }
 
-.showcase a img{
+.showcaselink img{
     border: 0.1em solid #505050;
 }
 
@@ -284,7 +288,7 @@ a .tooltip{
     border-radius: 2px;
     font-size: 12px;
     bottom: -0.5em;
-    left: 4.7em;
+    margin-left: 1.2em;
     text-shadow: 1 1 #505050;
     opacity: 0;
 }
@@ -306,6 +310,7 @@ a:hover .tooltip{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 12px;
 }
 
 .aopus{
@@ -331,6 +336,10 @@ a:hover .tooltip{
     margin-bottom: 8px;
 }
 
+.projectinfo span{
+    color: rgb(245, 177, 150);
+}
+
 /*Footer*/
 
 .footer{
@@ -344,12 +353,11 @@ a:hover .tooltip{
     /* color:rgb(158, 125, 112); */
     color: rgb(245, 177, 150);
     text-decoration: none;
-    display: block;
+    display: inline;
     margin-bottom: -10px;
 }
 .emailbtn:hover{
     color: rgb(255, 255, 255);
-    display: block;
 }
 
 .socialmedia{
