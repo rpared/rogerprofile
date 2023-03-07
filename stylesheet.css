@@ -77,10 +77,9 @@
     display: inline;
     background-color: transparent;
     position: relative;
-    width: 50%;
-    margin-left: -0.1%;
+    width: 38px;
     outline: none;
-    /* padding: 4px 0px 4px 7px; */
+    padding-left: 6%;
     border: 0;
     color: white;
     font-size: 0.8em;
