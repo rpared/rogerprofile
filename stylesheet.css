@@ -64,7 +64,7 @@
     scale: 95%;
     left: 0;
     top: 0;
-    background-color: rgb(212, 153, 130);
+    background-color: rgb(199, 144, 122);
     width: 35px;
     height: 22px;
     border-radius: 20px;
@@ -77,7 +77,8 @@
     display: inline;
     background-color: transparent;
     position: relative;
-    width: 2.5rem;
+    width: 50%;
+    margin-left: -0.1%;
     outline: none;
     /* padding: 4px 0px 4px 7px; */
     border: 0;
