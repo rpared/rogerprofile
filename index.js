@@ -25,17 +25,17 @@ let contentCreationDisplay = document.getElementById("contentcreation");
 let aboutTextENG = `Earth citizen, persistent, straightforward, hardworking and nonconformist. To me life is an adventure or an experience, a learning experience.
 <br>I have 15+ years of experience with branding, overall design, marketing, communication strategies, advertising, content creation, campaign planning and cms websites.
 <ul>
-   <li>Video content creator.</li> 
    <li>Enjoy learning, punctuality and paying attention to details.</li> 
-   <li>Love traveling, animals, metal and the gym. I am a vegan, an animal rights activist a metalhead and gym addict.</li>
+   <li>Love animals, traveling, metal and the gym. I am a vegan, an animal rights activist a metalhead and gym addict.</li>
+   <li>Content creator.</li> 
    <li>Expanding knowledge in development and coding. Currently studying web development.</li>            
 </ul>`;
 let aboutTextESP = `Ciudadano de la Tierra, perseverante, franco, trabajador e inconforme. Para mí la vida es una aventura o una experiencia, una experiencia de aprendizaje.
 <br>Tengo más de 15 años de experiencia en branding, diseño general, marketing, estrategias de comunicación, publicidad, creación de contenido, planificación de campañas y portales cms.
 <ul>
-   <li>Creador de contenido audiovisual.</li> 
    <li>Disfruto aprender, la puntualidad y prestar atención a los detalles.</li> 
-   <li>Amo viajar, los animales, el metal y el gimnasio. Soy vegano, activista por los derechos de los animales, metalero y adicto al gimnasio.</li>
+   <li>Amo a los animales, viajar, el metal y el gimnasio. Soy vegano, activista por los derechos de los animales, metalero y adicto al gimnasio.</li>
+   <li>Creador de contenido.</li> 
    <li>Expandiendo mi conocimiento en desarrollo y programación. Actualmente estudio desarrollo web.</li>            
 </ul>`;
 
