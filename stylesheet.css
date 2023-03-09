@@ -239,7 +239,7 @@ a{
     max-height: 45px;
     max-width: 100%;
     cursor: pointer;
-    filter: drop-shadow(0 0 8px #3b3b3b);
+    filter: drop-shadow(0 0 4px #1b1b1b);
 }
 
 .costrabrand:hover{
@@ -322,7 +322,7 @@ a:hover .tooltip{
     max-width: 100%;
     height: auto;
     max-height: 80px;
-    filter:drop-shadow(0 0 8px #3b3b3b);
+    filter:drop-shadow(0 0 8px #1b1b1b);
 }
 
 .aopus:hover{
