@@ -9,7 +9,7 @@ let entryLimit = 3;
 let error = false;
 
 
-function cvPassword(){
+function resumePassword(){
     if (language == "eng"){
     while(response != password && !error && !null){
         if(entryCount < entryLimit){
@@ -25,7 +25,7 @@ function cvPassword(){
         entryCount = 0;
         error = false;
    } else {
-    window.open("CV2023_RogerParedes.pdf","_blanc");
+    window.open("Resume2023_RogerParedes.pdf","_blanc");
    }
    return;
    }

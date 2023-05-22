@@ -28,19 +28,19 @@ let aboutTextENG = `Earth citizen, persistent, straightforward, hardworking and 
    <li>Enjoy learning, punctuality and paying attention to details.</li> 
    <li>Love animals, traveling, metal and the gym. I am a vegan, an animal rights activist a metalhead and fitness enthusiast.</li>
    <li>Content creator.</li> 
-   <li>Expanding knowledge in development and coding. Currently enrolled in IT. Solutions Post Graduate in Humber College, Toronto - Canada.</li>            
+   <li>Expanding knowledge in IT, development and coding. Currently enrolled in IT. Solutions Post Graduate.</li>            
 </ul>`;
 let aboutTextESP = `Ciudadano de la Tierra, perseverante, franco, trabajador e inconforme. Para mí la vida es una aventura o una experiencia, una experiencia de aprendizaje.
 <br>Tengo más de 15 años de experiencia en branding, diseño general, marketing, estrategias de comunicación, publicidad, creación de contenido, planificación de campañas y portales cms.
 <ul>
    <li>Disfruto aprender, la puntualidad y prestar atención a los detalles.</li> 
-   <li>Amo a los animales, viajar, el metal y el gimnasio. Soy vegano, activista por los derechos de los animales, metalero y adicto al gimnasio.</li>
+   <li>Amo a los animales, viajar, el metal y el gimnasio. Soy vegano, activista por los derechos de los animales, metalero y adicto al gym.</li>
    <li>Creador de contenido.</li> 
-   <li>Expandiendo mi conocimiento en desarrollo y programación. Actualmente en un postgrado de Soluciones de IT. en Humber College, Toronto - Canadá.</li>            
+   <li>Expandiendo mi conocimiento en TI, desarrollo y programación. Actualmente en un postgrado de Soluciones de TI.</li>            
 </ul>`;
 
 let cvENG = `<img class="wheelimg" src="images/circle.png" alt="CV">
-  <span class="btntext_cv">Download CV</span>  
+  <span class="btntext_cv">Download Resume</span>  
 `;
 let cvESP = `<img class="wheelimg" src="images/circle.png" alt="CV">
   <span class="btntext_cv">Descargar CV</span>  
