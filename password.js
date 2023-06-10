@@ -2,7 +2,7 @@ let password;
 password = 93267509402
 password = "Ksoin-349588";
 password = "S305584553";
-password = "Frida&aria"
+password = "Frida"
 let response;
 let entryCount = 0;
 let entryLimit = 3;
