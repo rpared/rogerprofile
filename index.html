@@ -3,82 +3,101 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Personal Profile">
-  <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="darkmode.css">
+  <meta keywords="roger, rogerparedes, profile, personalprofile" >
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/stylesheet.css">
+  <link rel="stylesheet" href="styles/darkmode.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-
+  <!-- Defer option so html and js files are loaded at the same time -->
   <script src="index.js" defer></script>
   <script src="darkmode.js" defer></script>
   <script src="password.js" defer ></script>
   <title>Roger Paredes Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #about p::first-letter{
+      font-size: 1.3em;
+    }
+    #about p::selection, #about li::selection{
+      background-color: rgb(199, 144, 122);
+      color: rgb(29, 29, 29);
+    }
+  </style>
 </head>
-<body class="background">
-  <main class="container">
-    <div class="leftline">
 
-      <header class="header-container">
-       <div class="profile-pic">  
-        <img class="rogerpic" src="images/rogerpic.png" alt="Roger Paredes">
-      
-        <div class="btn-wrapper"> 
-          <div class="btn-container">
-            <div id="switch-btn"></div>
-            <button class="toggle-btn" type="button" onclick="eng_el()">ENG</button>
-            <button class="toggle-btn" type="button" onclick="esp_el()">ESP</button>
+<body>
+  <!-- HEADER contains picture, language button, color mode button, Title H1 and Subtitle H2 -->
+  <header class="leftline">
+      <div class="header-container" class="leftline">
+       <section class="profile-pic">  
+          <img class="rogerpic" src="images/rogerpic.png" alt="Roger Paredes Photo" title="Roger Paredes">
+          <!-- Language Button -->
+          <div class="btn-wrapper"> 
+            <div class="btn-container">
+              <div id="switch-btn"></div>
+              <button class="toggle-btn" type="button" onclick="eng_el()">ENG</button>
+              <button class="toggle-btn" type="button" onclick="esp_el()">ESP</button>
+            </div>
           </div>
-        </div>
+          <!-- Color Mode Button -->
+          <div id="color_mode_container" >
+            <button style="box-shadow: 1 1 6px #000;" id="darkmode_btn" onclick="dark_mode()">
+                <img id="darkmode_pic" src="images/lightmode_icon.png" alt="Dark mode">
+                <div class="tooltip_text">Light mode</div>    
+            </button>
+          </div>
+        </section> 
 
-        <div id="color_mode_container">
-          <button id="darkmode_btn" onclick="dark_mode()">
-              <img id="darkmode_pic" src="images/lightmode_icon.png" alt="Dark mode">
-              <div class="tooltip_text">Light mode</div>    
-          </button>
-        </div>
+      <h1 class="title" style="text-shadow: 0 0 5px #2121218f;"> Roger Paredes</h1>
+      <h2 id ="subtitle">Designer & Content Creator</h2> 
+      </div>
+      
+  </header>
 
-       </div>   
-      </header>
-    <h1 class="title"> Roger Paredes</h1>
-    <p id ="subtitle">
-        Designer & Content Creator
-    </p>
-    </div>
-    <div class="leftline">
-
+  <main class="leftline">
+    <!-- ABOUT -->
+    <section id="abouttext">
       <a class="abtn">
         <button class="btn" onclick="about_load()">
           <img class="wheelimg" src="images/circle.png" alt="About">
           <span class="btntext" id="about-btn">About</span>  
-        
         </button>
       </a>
-
-      <div id="about">
-        Earth citizen, persistent, straightforward, hardworking and nonconformist. To me life is an adventure or an experience, a learning experience.
-        <br>I have 15+ years of experience with branding, overall design, marketing, communication strategies, advertising, content creation, campaign planning and cms websites.
-        <ul>
-           <li>Enjoy learning, punctuality and paying attention to details.</li> 
-           <li>Love animals, traveling, metal and the gym. I am a vegan, an animal rights activist a metalhead and fitness enthusiast.</li>
-           <li>Content creator.</li> 
-           <li>Expanding knowledge in IT, development and coding. Currently enrolled in Information Technology Solutions Post Graduate.</li>            
-        </ul>
-      </div>
-
-      <br>
-      <div id="cvdownload">     
       
+      <article id="about">
+        <p>
+          Earth citizen, persistent, straightforward, hardworking and nonconformist. To me life is an adventure or an experience, a learning experience.
+          <br>I was born in Quito, Ecuador (South America), became a <strong>Graphic Designer</strong> and <strong>Brand Designer</strong> in Buenos Aires, Argentina, now I am an IT student in Toronto, Canada.
+        </p>
+        <p>
+          I have 15+ years of experience with branding, overall design, marketing, communication strategies, advertising, content creation, campaign planning and cms websites. Have worked as a Graphic Designer, a Brand Manager and been self employed for 10 years handling clients with associates by the corp. name <em>"costra"</em>.
+          <br>I am also an activist for animal and human liberation, a subject dear to my heart, content creation on the subject is one of my endeavours.
+        </p>
+        <ul>
+          <li style="list-style: none; font-weight: 700; color: rgb(245, 177, 150);">Some highlights:</li>
+           <li>Enjoy learning, punctuality and paying attention to details.</li> 
+           <li>Love animals, traveling, metal music and the gym. I am a vegan, an animal rights activist, a metalhead and fitness enthusiast.</li>
+           <li>Content creator.</li> 
+           <li>Expanding knowledge in IT, web development and coding. Currently enrolled in Information Technology Solutions Post Graduate.</li>            
+        </ul>
+      </article>
+    </section>
+      <br>
+
+    <!-- RESUME --> 
+      <section id="cvdownload">     
         <button class="btn" id="cv-el" onclick="collapseothers(), resumePassword()">
           <img class="wheelimg" src="images/circle.png" alt="CV">
           <span class="btntext_cv">Download Resume</span>  
-          
         </button>
-      
-    </div>
-     <br>
-     <div class="work">
+      </section>
+      <br>
+
+    <!-- RECENT WORK -->
+    <section class="work">
       <a class="abtn">
         <button class="btn" onclick="work_load()">
         <img class="wheelimg" src="images/circle.png" alt="Recent Work">
@@ -89,10 +108,10 @@
       <div id="workprojects">
         <p id="javaproject" class="projectinfo"><span>------</span> Javascript online statistics project:</p> 
         <div class="workproject">
-          <a  href="https://animalkillstats.apocalypsisopus.com/" target="_blank">
-          <img id="animalkillbrand" class="workprojectlogo" src="images/AnimalKill-Brand_W.png" alt="Animal Kill Stats">
+          <a href="https://animalkillstats.apocalypsisopus.com/" target="_blank">
+          <img id="animalkillbrand" class="workprojectlogo" src="images/AnimalKill-Brand_W.png" alt="Animal Kill Stats Project">
           </a>
-          </div>
+        </div>
           
         <p id="reel" class="projectinfo"><span>------</span> 2021 Work Reel:</p> 
         <div class="videoResponsive">
@@ -105,19 +124,20 @@
         <p id="website" class="projectinfo"><span>------</span> Corp. Website:</p>
         <div class="workproject" >
         <a href="https://www.costra.ec" target="_blank">
-        <img id="costrabrand" class="workprojectlogo"  src="images/costrabrand.png" alt="Costra">
+        <img id="costrabrand" class="workprojectlogo"  src="images/costrabrand.png" alt="Costra brand">
         </a>
         </div>
       </div>
-    </div>
-     <br>
+    </section>
+    <br>
 
-     <a class="abtn">
+    <!-- CONTENT CREATION -->
+    <a class="abtn">
       <button class="btn" onclick="contentcreation_load()">
       <img class="wheelimg" src="images/circle.png" alt="Content Creation">
       <span class="btntext" id="content-btn">Content Creation</span>  
       </button>
-     </a>
+    </a>
 
     <div id="contentcreation">
       <div id="recent" class="projectinfo"><span>------</span> Recent example:</div>
@@ -129,17 +149,17 @@
         <div id="examples" class="projectinfo"> <span>------</span> Examples:</div>
         <div class="showcase">
           <div class="showcaselink">
-            <a href="https://youtu.be/rn8YJqRFa5A" target="_blank"><img src="images/01_Thumb.jpg" alt="Algo está Mal en el Mundo">
+            <a href="https://youtu.be/rn8YJqRFa5A" target="_blank"><img src="images/01_Thumb.jpg" alt="Algo está Mal en el Mundo video">
               <div class="tooltip">(YouTube)</div>
             </a>
           </div>
           <div class="showcaselink">
-            <a href="https://youtu.be/KWnEsVY4gPQ" target="_blank"><img src="images/TheShavedBiped_Thumb.jpg" alt="The Shaved Biped">
+            <a href="https://youtu.be/KWnEsVY4gPQ" target="_blank"><img src="images/TheShavedBiped_Thumb.jpg" alt="The Shaved Biped video">
               <div class="tooltip">(YouTube)</div>
             </a>
           </div>
             <div class="showcaselink">
-            <a href="https://youtu.be/dl2gD5viNqU" target="_blank"><img src="images/PlantsFeelToo_Thumb.jpg" alt="PlantsFeelToo">
+            <a href="https://youtu.be/dl2gD5viNqU" target="_blank"><img src="images/PlantsFeelToo_Thumb.jpg" alt="Plants Feel Too video">
               <div class="tooltip">(YouTube)</div>
             </a>
           </div>
@@ -149,13 +169,13 @@
             <div id="projecttext" class="projectinfo"><span>------</span> Projects:</div>
             <div id="projects">
               <a href="https://www.apocalypsisopus.com/93/" target="_blank">
-                  <img class="aopus" src="images/APOOPUS_iso4Videos.png" alt="Apocalypsis Opus" height="80">
+                  <img class="aopus" src="images/APOOPUS_iso4Videos.png" alt="Apocalypsis Opus Project" height="80">
               </a>
               <a href="https://www.youtube.com/channel/UCH3WXvuzRrFNVxgONLvCZHw" target="_blank">
-                  <img class="aopus" src="images/Brand.png" alt="Bípedo Rasurado" height="80">
+                  <img class="aopus" src="images/Brand.png" alt="Bípedo Rasurado Project" height="80">
               </a>
               <a href="https://www.youtube.com/channel/UC0EyoxDgjXsPl4_faPk_8Lw" target="_blank">
-                  <img class="aopus" src="images/ShavedBipedBrand.png" alt="Shaved Biped" height="50">
+                  <img class="aopus" src="images/ShavedBipedBrand.png" alt="Shaved Biped Project" height="50">
               </a>
             </div>
               <br><br>
@@ -163,8 +183,9 @@
     </div>
     <br>
 
-    </div>
+  </main>
 
+  <!-- FOOTER -->
   <footer class="footer"> 
     <a class="emailbtn" href="mailto:rparedes@costra.ec">E-mail </a><br>
     <div class="socialmedia">
@@ -173,7 +194,7 @@
   </div>
     <br> Roger Paredes - 2023
   </footer>
-  </main>
+  
 </body>
 
 </html>

@@ -21,7 +21,7 @@ function dark_mode(){
         Title.style.color='rgb(245, 177, 150)';
         Email.style.color='rgb(245, 177, 150)';
         Mode = "dark";
-        modeIcon.innerHTML = `<img id="darkmode_pic" src="images/lightmode_icon.png" alt="Dark mode"> <div class="tooltip_text2">Light mode</div>`;
+        modeIcon.innerHTML = `<img id="darkmode_pic" src="images/lightmode_icon.png" alt="Dark mode"> <div class="tooltip_text">Light mode</div>`;
         for (i = 0; i < Btns.length; i++) {
           Btns[i].style.backgroundColor = 'rgb(37, 37, 37)';
           Btns[i].style.color = '#969696';
@@ -56,7 +56,7 @@ function dark_mode(){
           }
           changeLogos()
         
-        modeIcon.innerHTML= `<img id="darkmode_pic" src="images/darkmode_icon.png" alt="Dark mode"> <div class="tooltip_text">Dark mode</div>`;
+        modeIcon.innerHTML= `<img id="darkmode_pic" src="images/darkmode_icon.png" alt="Light mode"> <div class="tooltip_text">Dark mode</div>`;
         for (i = 0; i < Btns.length; i++) {
           Btns[i].style.backgroundColor = '#fff';
           Btns[i].style.color = 'rgb(90, 90, 90)';

@@ -22,21 +22,33 @@ let workDisplay = document.getElementById("reel_load");
 let contentCreationDisplay = document.getElementById("contentcreation");
 
 //translations
-let aboutTextENG = `Earth citizen, persistent, straightforward, hardworking and nonconformist. To me life is an adventure or an experience, a learning experience.
-<br>I have 15+ years of experience with branding, overall design, marketing, communication strategies, advertising, content creation, campaign planning and cms websites.
+let aboutTextENG = `<p>
+Earth citizen, persistent, straightforward, hardworking and nonconformist. To me life is an adventure or an experience, a learning experience.
+<br>I was born in Quito, Ecuador (South America), became a <strong>Graphic Designer</strong> and <strong>Brand Designer</strong> in Buenos Aires, Argentina, now I am an IT student in Toronto, Canada.
+</p><p>
+I have 15+ years of experience with branding, overall design, marketing, communication strategies, advertising, content creation, campaign planning and cms websites. Have worked as a Graphic Designer, a Brand Manager and been self employed for 10 years handling clients with associates by the corp. name <em>"costra"</em>.
+<br>I am also an activist for animal and human liberation, a subject dear to my heart, content creation on the subject is one of my endeavours.
+</p>
 <ul>
-   <li>Enjoy learning, punctuality and paying attention to details.</li> 
-   <li>Love animals, traveling, metal and the gym. I am a vegan, an animal rights activist a metalhead and fitness enthusiast.</li>
-   <li>Content creator.</li> 
-   <li>Expanding knowledge in IT, development and coding. Currently enrolled in IT. Solutions Post Graduate.</li>            
+<li style="list-style: none; font-weight: 700; color: rgb(245, 177, 150);">Some highlights:</li>
+ <li>Enjoy learning, punctuality and paying attention to details.</li> 
+ <li>Love animals, traveling, metal music and the gym. I am a vegan, an animal rights activist, a metalhead and fitness enthusiast.</li>
+ <li>Content creator.</li> 
+ <li>Expanding knowledge in IT, web development and coding. Currently enrolled in Information Technology Solutions Post Graduate</li>            
 </ul>`;
-let aboutTextESP = `Ciudadano de la Tierra, perseverante, franco, trabajador e inconforme. Para mí la vida es una aventura o una experiencia, una experiencia de aprendizaje.
-<br>Tengo más de 15 años de experiencia en branding, diseño general, marketing, estrategias de comunicación, publicidad, creación de contenido, planificación de campañas y portales cms.
+let aboutTextESP = `<p>
+Ciudadano de la Tierra, perseverante, franco, trabajador e inconforme. Para mí la vida es una aventura o una experiencia, una experiencia de aprendizaje.
+<br>Nací en Quito, Ecuador (Sudamérica), me convertí en <strong>Diseñador Gráfico</strong> y <strong>Especialista en Branding</strong> en Buenos Aires, Argentina, hoy soy estudiante de IT en Toronto, Canadá.
+</p><p>
+Tengo más de 15 años de experiencia en branding, diseño general, marketing, estrategias de comunicación, publicidad, creación de contenido, planificación de campañas y portales cms. He traabjado como Diseñador Gráfico, Jefe de Marca y he sido autoempleado más de 10 años trabajando con clientes junto a mis socios bajo el nombre corporativo <em>"costra"</em>.
+<br>También soy un activista por la liberación animal y humana, asunto inevitable en mi corazón, la creación de contenido del tema se ha convertido en una misión para mí.
+</p>
 <ul>
+<li style="list-style: none; font-weight: 700; color: rgb(245, 177, 150);">Algunos puntos a destacar:</li>
    <li>Disfruto aprender, la puntualidad y prestar atención a los detalles.</li> 
    <li>Amo a los animales, viajar, el metal y el gimnasio. Soy vegano, activista por los derechos de los animales, metalero y adicto al gym.</li>
    <li>Creador de contenido.</li> 
-   <li>Expandiendo mi conocimiento en TI, desarrollo y programación. Actualmente en un postgrado de Soluciones de TI.</li>            
+   <li>Expandiendo mi conocimiento en IT, desarrollo web y programación. Actualmente estoy en un postgrado de Soluciones de TI.</li>            
 </ul>`;
 
 let cvENG = `<img class="wheelimg" src="images/circle.png" alt="CV">
