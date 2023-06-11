@@ -1,0 +1,79 @@
+
+
+#color_mode_container{
+    border: 1px solid #bbb;
+    position: absolute;
+    bottom: 10px;
+    left: 83px;
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    /* width: 56px;
+    height: 56px; */
+    display: flex;
+    margin: auto;
+}
+
+#darkmode_btn{
+    margin: auto;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    /* width: 50px;
+    height: 50px; */
+    padding: 0 0.02em 0 0;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer ;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#darkmode_btn:hover{
+    opacity: 0.9;
+}
+
+#darkmode_btn .tooltip_text{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 24px rgb(35, 35, 35);
+    background-color: rgb(55, 55, 55);
+    padding: 0.1em 0.2em;
+    margin-left: -5px ;
+    position: absolute;
+    display: block;
+    text-align: center;
+    top: 3px;
+    left: 32px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#darkmode_btn:hover .tooltip_text{
+    opacity: 1;
+}
+
+#darkmode_pic{
+    width: 22px;
+    height: 22px;
+    
+}
+
+#darkmode_btn .tooltip_text2{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 24px rgb(35, 35, 35);
+    background-color: rgb(55, 55, 55);
+    padding: 0.1em 0.2em;
+    margin-left: 0px;
+    position: absolute;
+    display: block;
+    text-align: center;
+    top: 3px;
+    left: 28px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#darkmode_btn:hover .tooltip_text2{
+    opacity: 1;
+}

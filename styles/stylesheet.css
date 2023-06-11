@@ -1,0 +1,382 @@
+/*Style for body*/
+body{
+    font-family: Exo;
+    background-color: rgb(37, 37, 37);
+    color: #969696;
+    margin-top: 0px;
+    margin-left: 20%;
+    position: relative; 
+}
+
+.leftline{
+    border-left: 2px solid #969696;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*Header*/
+    .header-container{
+        position: relative;
+        height: 280px;
+    }
+
+        /* .profile.pic element with position relative holds
+        the language button located
+        with position absolute*/
+
+    .profile-pic{
+        position: relative;
+        height: 205px;
+    }
+
+    /* Language Button */
+
+        .btn-wrapper{
+            position: absolute;
+            left: 3px;
+            top: 170px;
+            width: 72px;
+        }
+
+        .btn-container{
+            border: 1px solid #969696;
+            border-radius: 20px;
+            width: 71px;
+            height: 22px;
+            position: relative;
+            box-shadow: 0 0 4px #000;
+            background-color: #96969655 ;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #switch-btn{
+            position: absolute;
+            scale: 95%;
+            left: 0;
+            top: 0;
+            background-color: rgb(199, 144, 122);
+            width: 35px;
+            height: 22px;
+            border-radius: 20px;
+            margin: 0;
+            box-shadow: 0 0 2px rgb(70, 70, 70);
+            transition: 0.3s;
+        }
+
+        .toggle-btn{
+            display: inline;
+            background-color: transparent;
+            position: relative;
+            width: 38px;
+            outline: none;
+            padding-left: 6%;
+            border: 0;
+            color: white;
+            font-size: 0.8em;
+            font-weight: 500;
+            cursor: pointer;
+            text-shadow: 1px 1px 3px #000;
+            font-family: Exo;
+        }
+        .tooltip_text{
+            font-size: 0.9em;
+            font-weight: 400;
+        }
+
+    .rogerpic{
+        height: 200px;
+    }
+
+    h1{
+        /* color:rgb(158, 125, 112); */
+        color: rgb(245, 177, 150);
+        margin-top: 2px;
+        margin-bottom: 0px;
+    }
+
+    h2{
+        margin-top: 0px;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+/*Main*/
+
+    .wheelimg{
+        height: 25px;
+        filter: invert(45%);
+    }
+    .menu_btn{
+        border: 0;
+        background-color: #28282800;
+        margin: none;
+    }
+
+    a{
+        text-decoration: none;
+        background-color: none;
+        color: currentColor;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        vertical-align: middle;
+    }
+
+    .btn{
+        background-color: rgb(37, 37, 37);
+        color: #969696;
+        border: 0px;
+        border-top: 2px solid #969696;
+        padding-top: 2px;
+        height: 50px;
+        width: 205px;
+        margin-left: -22px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        transition: opacity 0.15s;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        color: rgb(255, 255, 255);
+        height: 53px;
+    }
+
+    .btn:active{
+        color: rgb(245, 177, 150);
+    }
+    .btntext{
+        padding-left: 7px;
+        font-family: Exo;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .btntext_cv{
+        padding-left: 7px;
+        padding-top: 3px;
+        font-family: Exo;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .btninactive{
+        background-color: rgb(37, 37, 37);
+        color: rgb(245, 177, 150);
+        border: 0px;
+        mask-border-outset: 70%;
+        border-top: 2px solid #969696;
+        display: block;
+        padding-top: 2px;
+        height: 50px;
+        width: 205px;
+        margin-left: -22px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        transition: opacity 0.15s;
+    }
+
+/*About*/
+
+    #about {
+        display: none;
+        background-color: #505050;
+        color: #c9c9c9;
+        padding: 1.2em 1.2em 0.8em 1.2em;
+        max-width: 650px;
+        margin-left: 0.5em;
+        max-height: 215px;
+        overflow-y: scroll;
+    }
+
+    #about li{
+        margin-left: -1em;
+    }
+
+    #about p{
+        margin-top: 0px;
+    }
+
+/*Recent Work Projects*/
+
+    #workprojects{
+        display: none;
+    }
+
+    .videoResponsive {
+        padding-bottom:30%;
+        padding-left: 20%;
+        margin-left: 14px;
+        height:auto;
+        position:relative;
+        padding-top:30px;
+        overflow:hidden;
+    }
+    .videoResponsive iframe, 
+    .videoResponsive object, 
+    .videoResponsive embed {
+        position:absolute;
+        left:1%;
+        top:0;
+        border: 0px;
+        width:100%;
+        height:100%;
+        max-width: 720px;
+        max-height: 480px;
+    }
+    .workproject{
+        display: inline-flex;
+
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+    .workprojectlogo {
+        display: block;
+        max-height: 45px;
+        max-width: 100%;
+        cursor: pointer;
+        filter: drop-shadow(0 0 4px #1b1b1b);
+    }
+
+    .costrabrand:hover{
+        opacity:0.4;
+    }
+
+/*Content Creation*/
+
+    #contentcreation{
+        display: none;
+    }
+
+    .showcase{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        margin-top: -0.1em;
+        max-width: fit-content;
+        padding: 1em 1em 1em 1em;
+    }
+
+    #examples{
+        margin-top: 1em;
+        margin-bottom: -0.5em;
+    }
+
+    .showcaselink{
+        background-color: #505050;
+        border: 1.2em solid #505050;
+        padding: 0;
+        position: relative;
+    }
+    .showcaselink:hover{
+        opacity: 0.8;
+    }
+
+    .showcaselink img{
+        border: 0.1em solid #505050;
+    }
+
+    a .tooltip{
+        position: absolute;
+        background-color: #282828;
+        padding: 0.3em;
+        color: rgb(255, 255, 255);
+        border-radius: 2px;
+        font-size: 12px;
+        bottom: -0.5em;
+        margin-left: 1.2em;
+        text-shadow: 1 1 #505050;
+        opacity: 0;
+    }
+
+    a:hover .tooltip{
+        position: absolute;
+        background-color: #282828;
+        padding: 0.3em;
+        color: rgb(255, 255, 255);
+        border-radius: 2px;
+        font-size: 12px;
+        bottom: -0.5em;
+        left: 4.7em;
+        text-shadow: 1 1 #505050;
+        opacity: 0.8;
+    }
+
+    #projects{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 12px;
+    }
+
+    .aopus{
+        margin-left: 20px;
+        margin-right: 5px;
+        margin-top: 12px;
+        margin-bottom: 30px;
+        vertical-align: top;
+        max-width: 100%;
+        height: auto;
+        max-height: 80px;
+        filter:drop-shadow(0 0 8px #1b1b1b);
+    }
+
+    .aopus:hover{
+        opacity: 0.4;
+    }
+
+    .projectinfo{
+        font-size:9pt;
+        font-style: italic;
+        margin-left: 10px; 
+        margin-bottom: 8px;
+    }
+
+    .projectinfo span{
+        color: rgb(245, 177, 150);
+    }
+
+/*Footer*/
+
+    .footer{
+        border-left: 2px solid #969696;
+        padding: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: small;
+    }
+    .emailbtn{
+        /* color:rgb(158, 125, 112); */
+        color: rgb(245, 177, 150);
+        text-decoration: none;
+        display: inline;
+        margin-bottom: -10px;
+    }
+    .emailbtn:hover{
+        color: rgb(255, 255, 255);
+    }
+
+    .socialmedia{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        margin-bottom: -10px;
+    }
+
+    .socialmediaicon a img{
+        scale: 70%;
+        padding: 0.2em;
+        margin: -0.5em;
+        filter: grayscale(1);    
+    }
+
+    .socialmedia a img:hover{
+        margin: -0.5em;
+        filter: none;
+        cursor: pointer;
+    }
