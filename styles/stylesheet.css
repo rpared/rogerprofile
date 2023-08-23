@@ -246,10 +246,13 @@ body{
         opacity:0.4;
     }
 
-/*Content Creation*/
+/*Projects*/
 
-    #contentcreation{
+    #projects{
         display: none;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 12px;
     }
 
     .showcase{
@@ -306,12 +309,6 @@ body{
         opacity: 0.8;
     }
 
-    #projects{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 12px;
-    }
 
     .aopus{
         margin-left: 20px;
@@ -325,7 +322,7 @@ body{
         filter:drop-shadow(0 0 8px #1b1b1b);
     }
 
-    .aopus:hover{
+    .aopus:hover, .workproject:hover{
         opacity: 0.4;
     }
 
@@ -375,8 +372,12 @@ body{
         filter: grayscale(1);    
     }
 
-    .socialmedia a img:hover{
-        margin: -0.5em;
+    .github{
+        filter:contrast(70%);
+    }
+
+
+    .socialmedia a img:hover, .github:hover{
         filter: none;
         cursor: pointer;
     }
