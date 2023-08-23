@@ -5,6 +5,7 @@ let Title = document.querySelector(".title");
 let Email = document.querySelector(".emailbtn");
 let Wheel = document.querySelectorAll(".wheelimg");
 let costraBrand = document.getElementById("costrabrand");
+let freshiesBrand = document.getElementById("freshiesbrand");
 let animalKillBrand = document.getElementById("animalkillbrand");
 let workProjectLogo = document.querySelectorAll(".workprojectlogo");
 let opusBrands = document.querySelectorAll(".aopus");
@@ -29,6 +30,7 @@ function dark_mode(){
         function changeLogos(){
           animalKillBrand.src = "images/AnimalKill-Brand_W.png";
           costraBrand.src='images/costrabrand.png';
+          freshiesBrand.src = 'images/FreshiesLogoBlackBcgrnd.png'
         }
         changeLogos()
         for(i=0; i < opusBrands.length; i++){
@@ -53,6 +55,7 @@ function dark_mode(){
           function changeLogos(){
             animalKillBrand.src = "images/AnimalKill-Brand.png";
             costraBrand.src='images/costrabrand2.png';
+            freshiesBrand.src = 'images/FreshiesLogoColor.png'
           }
           changeLogos()
         

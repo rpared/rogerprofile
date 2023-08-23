@@ -3,7 +3,7 @@ let switchBtn = document.getElementById("switch-btn");
 let subtitle = document.getElementById("subtitle");
 let aboutBtn = document.getElementById("about-btn");
 let workBtn = document.getElementById("work-btn");
-let contentCreationBtn = document.getElementById("content-btn");
+let projectsBtn = document.getElementById("projects-btn");
 let aboutText = document.getElementById("about");
 let javaProjectText = document.getElementById("javaproject");
 let reelText = document.getElementById("reel");
@@ -19,7 +19,7 @@ let language = "eng";
 //DOM Variables - collapsing menus or sections
 let aboutDisplay = document.getElementById("about_load");
 let workDisplay = document.getElementById("reel_load");
-let contentCreationDisplay = document.getElementById("contentcreation");
+let projectsDisplay = document.getElementById("projects");
 
 //translations
 let aboutTextENG = `<p>
@@ -87,15 +87,17 @@ function eng_el(){
     subtitle.textContent = "Designer & Content Creator";
     aboutBtn.textContent = "About";
     workBtn.textContent = "Recent Work";
-    contentCreationBtn.textContent = "Content Creation";
+    projectsBtn.textContent = "Projects";
     aboutText.innerHTML = aboutTextENG;
     cvDownload.innerHTML = cvENG;
-    javaProjectText.innerHTML = `<span>------</span> Javascript online statistics project:</p>`
-    reelText.innerHTML = `<span>------</span> 2021 Work Reel:</p>`;
-    websiteText.innerHTML = `<span>------</span> Corp. Website:</p>`; 
-    recentExample.innerHTML = `<span>------</span> Recent example:`;
+    document.getElementById("freshies").innerHTML = `<span>------</span> Website for new int'l College students (HTML + CSS + Javascript):</p>`
+    javaProjectText.innerHTML = `<span>------</span> Online animal statistics website (HTML + CSS + Javascript):</p>`
+    reelText.innerHTML = `<span>------</span> Not so recent reel (2021) for Costra (Creative agency run with partners):</p>`;
+    websiteText.innerHTML = `<span>------</span> Costra (Creative agency run with partners) Website:</p>`; 
+    recentExample.innerHTML = `<span>------</span> Recent content creation video (Shaved Biped):`;
     projectsText.innerHTML = `<span>------</span> Projects:`;
     recentVid.innerHTML = videoIframeENG;
+    document.getElementById("portfolio").innerHTML = `<span>------</span> Check out more of my work in my portfolio:</p>`
     showcase.innerHTML = showcaseENG;
     examplesText.innerHTML = `<span>------</span> Examples:`;
     language = "eng";
@@ -106,13 +108,15 @@ function esp_el(){
     subtitle.textContent = "Diseñador y Creador de Contenido";
     aboutBtn.textContent = "Acerca de";
     workBtn.textContent = "Trabajo Reciente";
-    contentCreationBtn.textContent = "Creación de Contenido";
+    projectsBtn.textContent = "Proyectos";
     aboutText.innerHTML = aboutTextESP;
     cvDownload.innerHTML = cvESP;
+    document.getElementById("freshies").innerHTML = `<span>------</span> Web para estudiantes internacionales en Toronto (HTML + CSS + Javascript)::</p>`
     javaProjectText.innerHTML = `<span>------</span> Proyecto de estadísticas en Javascript:</p>`
-    reelText.innerHTML = `<span>------</span> Reel de trabajos 2021:</p>`;
-    websiteText.innerHTML = `<span>------</span> Website Corporativo:</p>`; 
-    recentExample.innerHTML = `<span>------</span> Ejemplo reciente:`;
+    reelText.innerHTML = `<span>------</span> Reel de trabajos, no tan recientes (2021), Costra (Agencia que manejamos con socios):</p>`;
+    websiteText.innerHTML = `<span>------</span> Website Costra (Agencia que manejamos con socios):</p>`; 
+    recentExample.innerHTML = `<span>------</span> Video reciente (Bípedo Rasurado):`;
+    document.getElementById("portfolio").innerHTML = `<span>------</span> Revisa más trabajos en mi portfolio:</p>`
     projectsText.innerHTML = `<span>------</span> Proyectos:`;
     recentVid.innerHTML = videoIframeESP;
     showcase.innerHTML = showcaseESP;
@@ -131,8 +135,8 @@ function about_load(){
         aboutDisplay = "loaded";
         document.querySelector("#workprojects").style.display = "none";
         workDisplay = "unloaded";
-        document.querySelector("#contentcreation").style.display = "none";
-        contentCreationDisplay = "unloaded";
+        document.querySelector("#projects").style.display = "none";
+        projectsDisplay = "unloaded";
         }
     }
 
@@ -145,18 +149,18 @@ function work_load(){
         workDisplay = "loaded";
         document.querySelector("#about").style.display = "none";
         aboutDisplay = "unloaded";
-        document.querySelector("#contentcreation").style.display = "none";
-        contentCreationDisplay = "unloaded";
+        document.querySelector("#projects").style.display = "none";
+        projectsDisplay = "unloaded";
         }
     }
 
 /*function to load Content Creation changing CSS style display from none to block*/
-function contentcreation_load(){   
-    if (contentCreationDisplay == "loaded"){ 
-        document.querySelector("#contentcreation").style.display = "none";
-        contentCreationDisplay = "unloaded";}
-        else{document.querySelector("#contentcreation").style.display = "block";
-        contentCreationDisplay = "loaded";
+function projects_load(){   
+    if (projectsDisplay == "loaded"){ 
+        document.querySelector("#projects").style.display = "none";
+        projectsDisplay = "unloaded";}
+        else{document.querySelector("#projects").style.display = "block";
+        projectsDisplay = "loaded";
         document.querySelector("#about").style.display = "none";
         aboutDisplay = "unloaded";
         document.querySelector("#workprojects").style.display = "none";
@@ -170,6 +174,6 @@ function collapseothers(){
     aboutDisplay = "unloaded";
     document.querySelector("#workprojects").style.display = "none";
     workDisplay = "unloaded";
-    document.querySelector("#contentcreation").style.display = "none";
-    contentCreationDisplay = "unloaded";
+    document.querySelector("#projects").style.display = "none";
+    projectsDisplay = "unloaded";
 }
