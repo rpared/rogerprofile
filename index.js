@@ -177,3 +177,8 @@ function collapseothers(){
     document.querySelector("#projects").style.display = "none";
     projectsDisplay = "unloaded";
 }
+
+document.getElementById("closebtn").addEventListener("click", function(){
+document.getElementById("popup").style.display = "none";
+
+})
