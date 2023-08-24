@@ -414,6 +414,7 @@ body{
         right: 10px;
         top: 2px;
         font-size: 26px;
+        color: rgb(37, 37, 37);
         background-color: rgba(255, 255, 255, 0);
         border: none;
         border-radius: 2px;
@@ -424,6 +425,19 @@ body{
         opacity: 0.6;
     }
 
+    #closebtn:visited{
+        color: rgb(37, 37, 37);
+    }
     .js-is-hidden {
         display: none;
       }
+
+    
+@media screen and (max-width: 600px) {
+
+    #popup-content{
+        width: 60%;
+        padding-right: 10%;
+    }
+
+}
