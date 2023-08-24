@@ -178,7 +178,22 @@ function collapseothers(){
     projectsDisplay = "unloaded";
 }
 
+//Pop Up
+
 document.getElementById("closebtn").addEventListener("click", function(){
 document.getElementById("popup").style.display = "none";
-
 })
+
+// Select element with box class, assign to box variable
+const popUp = document.querySelector("#popup");
+const popUpContent = document.querySelector("#popup-content");
+// Detect all clicks on the document
+document.addEventListener("click", function(event){
+// If user clicks inside the element, do nothing
+if(event.target.closest("#popup-content")) return;
+// If user clicks outside the element, hide it!
+popUp.style.display = "none";
+})
+
+
+
