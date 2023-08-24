@@ -423,3 +423,8 @@ body{
     #closebtn:hover, #popup-content a:hover{
         opacity: 0.6;
     }
+
+
+ .js-is-hidden {
+        display: none;
+      }
