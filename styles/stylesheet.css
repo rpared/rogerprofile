@@ -205,6 +205,7 @@ body{
 
     #workprojects{
         display: none;
+        margin-left: 6px;
     }
 
     .videoResponsive {
@@ -252,7 +253,7 @@ body{
         display: none;
         flex-direction: column;
         flex-wrap: nowrap;
-        margin-left: 12px;
+        margin-left: 6px;
     }
 
     .showcase{
@@ -351,7 +352,7 @@ body{
         color: rgb(245, 177, 150);
         text-decoration: none;
         display: inline;
-        margin-bottom: -10px;
+        margin-left: 5px;
     }
     .emailbtn:hover{
         color: rgb(255, 255, 255);
@@ -360,8 +361,8 @@ body{
     .socialmedia{
         display: flex;
         flex-direction: row;
-        margin: 0;
-        margin-bottom: -10px;
+        margin: 6px 0 -10px;
+        /* margin-bottom: -10px; */
     }
 
     .socialmediaicon a img{
