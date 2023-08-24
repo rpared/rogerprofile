@@ -186,6 +186,14 @@ document.getElementById("popup").style.display = "none";
 
 // Select element with box class, assign to box variable
 const popUp = document.querySelector("#popup");
+
+setTimeout(popUpDisplay, 1800);
+
+function popUpDisplay(){
+  popUp.style.display = "flex";
+}
+
+
 const popUpContent = document.querySelector("#popup-content");
 // Detect all clicks on the document
 document.addEventListener("click", function(event){
