@@ -439,5 +439,9 @@ body{
         width: 60%;
         padding-right: 10%;
     }
-
+    
+    #closebtn{
+        top: 0px;
+        right: 5px;
+    }
 }
