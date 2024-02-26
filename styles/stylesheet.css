@@ -242,6 +242,9 @@ body{
         cursor: pointer;
         filter: drop-shadow(0 0 4px #1b1b1b);
     }
+    #vfootprintbrand{
+        max-height: 85px;
+    }
 
     .costrabrand:hover{
         opacity:0.4;
@@ -439,10 +442,10 @@ body{
         width: 60%;
         padding-right: 10%;
     }
-    
+
     #closebtn{
-        margin-right: 0px;
-        padding-right: 0px;
+        margin-right: 0;
+        padding-right: 0;
         top: 0px;
         right: 3%;
     }
