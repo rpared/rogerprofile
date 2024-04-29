@@ -1,143 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNFMW1DZF8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QNFMW1DZF8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-QNFMW1DZF8');
-</script>
-  <meta charset="utf-8">
-  <meta name="description" content="Personal Profile">
-  <meta keywords="roger, rogerparedes, profile, personalprofile" >
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/stylesheet.css">
-  <link rel="stylesheet" href="styles/darkmode.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600&display=swap" rel="stylesheet"> 
-  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-  <!-- Defer option so html and js files are loaded at the same time -->
-  <script src="index.js" defer></script>
-  <script src="darkmode.js" defer></script>
-  <script src="password.js" defer ></script>
-  <title>Roger Paredes Profile</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    #about p::first-letter{
-      font-size: 1.3em;
-    }
-    #about p::selection, #about li::selection{
-      background-color: rgb(199, 144, 122);
-      color: rgb(29, 29, 29);
-    }
-  </style>
-</head>
+      gtag("config", "G-QNFMW1DZF8");
+    </script>
+    <meta charset="utf-8" />
+    <meta name="description" content="Personal Profile" />
+    <meta keywords="roger, rogerparedes, profile, personalprofile" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/stylesheet.css" />
+    <link rel="stylesheet" href="styles/darkmode.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <!-- Defer option so html and js files are loaded at the same time -->
+    <script src="index.js" defer></script>
+    <script src="darkmode.js" defer></script>
+    <script src="password.js" defer></script>
+    <title>Roger Paredes Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #about p::first-letter {
+        font-size: 1.3em;
+      }
+      #about p::selection,
+      #about li::selection {
+        background-color: rgb(199, 144, 122);
+        color: rgb(29, 29, 29);
+      }
+    </style>
+  </head>
 
-<body>
-  <!-- HEADER contains picture, language button, color mode button, Title H1 and Subtitle H2 -->
-  <header class="leftline">
+  <body>
+    <!-- HEADER contains picture, language button, color mode button, Title H1 and Subtitle H2 -->
+    <header class="leftline">
       <div class="header-container" class="leftline">
-       <section class="profile-pic">  
-          <img class="rogerpic" src="images/rogerpic.png" alt="Roger Paredes Photo" title="Roger Paredes">
+        <section class="profile-pic">
+          <img
+            class="rogerpic"
+            src="images/rogerpic.png"
+            alt="Roger Paredes Photo"
+            title="Roger Paredes"
+          />
           <!-- Language Button -->
-          <div class="btn-wrapper"> 
+          <div class="btn-wrapper">
             <div class="btn-container">
               <div id="switch-btn"></div>
-              <button class="toggle-btn" type="button" onclick="eng_el()">ENG</button>
-              <button class="toggle-btn" type="button" onclick="esp_el()">ESP</button>
+              <button class="toggle-btn" type="button" onclick="eng_el()">
+                ENG
+              </button>
+              <button class="toggle-btn" type="button" onclick="esp_el()">
+                ESP
+              </button>
             </div>
           </div>
           <!-- Color Mode Button -->
-          <div id="color_mode_container" >
-            <button style="box-shadow: 1 1 6px #000;" id="darkmode_btn" onclick="dark_mode()">
-                <img id="darkmode_pic" src="images/lightmode_icon.png" alt="Dark mode">
-                <div class="tooltip_text">Light mode</div>    
+          <div id="color_mode_container">
+            <button
+              style="box-shadow: 1 1 6px #000"
+              id="darkmode_btn"
+              onclick="dark_mode()"
+            >
+              <img
+                id="darkmode_pic"
+                src="images/lightmode_icon.png"
+                alt="Dark mode"
+              />
+              <div class="tooltip_text">Light mode</div>
             </button>
           </div>
-        </section> 
+        </section>
 
-      <h1 class="title" style="text-shadow: 0 0 5px #2121218f;"> Roger Paredes</h1>
-      <h2 id ="subtitle">Designer, Developer & Content Creator</h2> 
+        <h1 class="title" style="text-shadow: 0 0 5px #2121218f">
+          Roger Paredes
+        </h1>
+        <h2 id="subtitle">Designer, Developer & Content Creator</h2>
       </div>
-      
-  </header>
+    </header>
 
-  <main class="leftline">
-    <!-- ABOUT -->
-    <section id="abouttext">
-      <a class="abtn">
-        <button class="btn" onclick="about_load()">
-          <img class="wheelimg" src="images/circle.png" alt="About">
-          <span class="btntext" id="about-btn">About</span>  
-        </button>
-      </a>
-      
-      <article id="about">
-        <p>
-          Earth citizen, persistent, straightforward, hardworking and nonconformist. To me life is an adventure or an experience, a learning experience.
-          <br>I was born in Quito, Ecuador (South America), became a <strong>Graphic Designer</strong> and <strong>Brand Designer</strong> in Buenos Aires, Argentina, now I am an IT student in Toronto, Canada.
-        </p>
-        <p>
-          I have 15+ years of experience with branding, overall design, marketing, communication strategies, advertising, content creation, campaign planning and cms websites. Have worked as a Graphic Designer, a Brand Manager and been self employed for 10 years handling clients with associates by the corp. name <em>"costra"</em>.
-          <br>I am also an activist for animal and human liberation, a subject dear to my heart, content creation on the subject is one of my endeavours.
-        </p>
-        <ul>
-          <li style="list-style: none; font-weight: 700; color: rgb(245, 177, 150);">Some highlights:</li>
-           <li>Enjoy learning, punctuality and paying attention to details.</li> 
-           <li>Love animals, traveling, metal music and the gym. I am a vegan, an animal rights activist, a metalhead and fitness enthusiast.</li>
-           <li>Content creator.</li> 
-           <li>Expanding knowledge in IT, web development and coding. Currently enrolled in Information Technology Solutions Post Graduate.</li>            
-        </ul>
-      </article>
-    </section>
-      <br>
+    <main class="leftline">
+      <!-- ABOUT -->
+      <section id="abouttext">
+        <a class="abtn">
+          <button class="btn" onclick="about_load()">
+            <img class="wheelimg" src="images/circle.png" alt="About" />
+            <span class="btntext" id="about-btn">About</span>
+          </button>
+        </a>
 
-    <!-- RESUME --> 
-      <section id="cvdownload">     
-        <button class="btn" id="cv-el" onclick="collapseothers(), resumePassword()">
-          <img class="wheelimg" src="images/circle.png" alt="CV">
-          <span class="btntext_cv">Download Resume</span>  
+        <article id="about">
+          <p>
+            Earth citizen, persistent, straightforward, hardworking and
+            nonconformist. To me life is an adventure or an experience, a
+            learning experience.
+            <br />I was born in Quito, Ecuador (South America), became a
+            <strong>Graphic Designer</strong> and
+            <strong>Brand Designer</strong> in Buenos Aires, Argentina, now I am
+            an IT student in Toronto, Canada.
+          </p>
+          <p>
+            I have 15+ years of experience with branding, overall design,
+            marketing, communication strategies, advertising, content creation,
+            campaign planning and cms websites. Have worked as a Graphic
+            Designer, a Brand Manager and been self employed for 10 years
+            handling clients with associates by the corp. name
+            <em>"costra"</em>. <br />I am also an activist for animal and human
+            liberation, a subject dear to my heart, content creation on the
+            subject is one of my endeavours.
+          </p>
+          <ul>
+            <li
+              style="
+                list-style: none;
+                font-weight: 700;
+                color: rgb(245, 177, 150);
+              "
+            >
+              Some highlights:
+            </li>
+            <li>
+              Enjoy learning, punctuality and paying attention to details.
+            </li>
+            <li>
+              Love animals, traveling, metal music and the gym. I am a vegan, an
+              animal rights activist, a metalhead and fitness enthusiast.
+            </li>
+            <li>Content creator.</li>
+            <li>
+              Expanding knowledge in IT, web development and coding. Currently
+              enrolled in Information Technology Solutions Post Graduate.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <br />
+
+      <!-- RESUME -->
+      <section id="cvdownload">
+        <button
+          class="btn"
+          id="cv-el"
+          onclick="collapseothers(), resumePassword()"
+        >
+          <img class="wheelimg" src="images/circle.png" alt="CV" />
+          <span class="btntext_cv">Download Resume</span>
         </button>
       </section>
-      <br>
+      <br />
 
-    <!-- RECENT WORK -->
-    <section class="work">
-      <a class="abtn">
-        <button class="btn" onclick="work_load()">
-        <img class="wheelimg" src="images/circle.png" alt="Recent Work">
-        <span class="btntext" id="work-btn">Recent Work</span>  
-        </button> 
-      </a>
+      <!-- RECENT WORK -->
+      <section class="work">
+        <a class="abtn">
+          <button class="btn" onclick="work_load()">
+            <img class="wheelimg" src="images/circle.png" alt="Recent Work" />
+            <span class="btntext" id="work-btn">Recent Work</span>
+          </button>
+        </a>
 
-      <div id="workprojects">
+        <div id="workprojects">
+          <p id="vfootprint" class="projectinfo">
+            <span>------</span> App to calculate vegan footprint (HTML + CSS +
+            Javascript):
+          </p>
+          <div class="workproject">
+            <a href="https://rpared.github.io/vfootprint/" target="_blank">
+              <img
+                id="vfootprintbrand"
+                class="workprojectlogo"
+                src="images/VFootprint-Brand_W.png"
+                alt="V Footprint App"
+              />
+            </a>
+          </div>
 
-        <p id="vfootprint" class="projectinfo"><span>------</span> App to calculate vegan footprint (HTML + CSS + Javascript):</p> 
-        <div class="workproject">
-          <a href="https://rpared.github.io/vfootprint/" target="_blank">
-          <img id="vfootprintbrand" class="workprojectlogo" src="images/VFootprint-Brand_W.png" alt="V Footprint App">
-          </a>
-        </div>
+          <p id="javaproject" class="projectinfo">
+            <span>------</span> Online animal statistics website (HTML + CSS +
+            Javascript):
+          </p>
+          <div class="workproject">
+            <a
+              href="https://animalkillstats.apocalypsisopus.com/"
+              target="_blank"
+            >
+              <img
+                id="animalkillbrand"
+                class="workprojectlogo"
+                src="images/AnimalKill-Brand_W.png"
+                alt="Animal Kill Stats Project"
+              />
+            </a>
+          </div>
 
-        <p id="freshies" class="projectinfo"><span>------</span> Website for new int'l College students (HTML + CSS + Javascript):</p> 
-        <div class="workproject">
-          <a href="https://www.freshiescanada.com/" target="_blank">
-          <img id="freshiesbrand" class="workprojectlogo" src="images/FreshiesLogoBlackBcgrnd.png" alt="Freshies in Canada Website">
-          </a>
-        </div>
+          <p id="freshies" class="projectinfo">
+            <span>------</span> Website for new int'l College students (HTML +
+            CSS + Javascript):
+          </p>
+          <div class="workproject">
+            <a href="https://www.freshiescanada.com/" target="_blank">
+              <img
+                id="freshiesbrand"
+                class="workprojectlogo"
+                src="images/FreshiesLogoBlackBcgrnd.png"
+                alt="Freshies in Canada Website"
+              />
+            </a>
+          </div>
 
-        <p id="javaproject" class="projectinfo"><span>------</span> Online animal statistics website (HTML + CSS + Javascript):</p> 
-        <div class="workproject">
-          <a href="https://animalkillstats.apocalypsisopus.com/" target="_blank">
-          <img id="animalkillbrand" class="workprojectlogo" src="images/AnimalKill-Brand_W.png" alt="Animal Kill Stats Project">
-          </a>
-        </div>
-
-        <!-- <p id="reel" class="projectinfo"><span>------</span> 2021 Work Reel:</p> 
+          <!-- <p id="reel" class="projectinfo"><span>------</span> 2021 Work Reel:</p> 
         <div class="videoResponsive">
         <iframe width="100%" height="480px"
         src="https://www.youtube.com/embed/iC424h6NtyA?controls=1">
@@ -145,77 +229,125 @@
         </div>
         <br> -->
 
-        <p id="recent" class="projectinfo"><span>------</span> Recent content creation video (Shaved Biped):</p>
-          
-            <div id="recentvideo" class="videoResponsive" class="workproject">
-              <iframe width="100%" height="480px"
-              src="https://www.youtube.com/embed/iC424h6NtyA?controls=1">
-              
+          <p id="recent" class="projectinfo">
+            <span>------</span> Recent content creation video (Shaved Biped):
+          </p>
 
-              </iframe> 
-            </div>
-        
-        <br>
+          <div id="recentvideo" class="videoResponsive" class="workproject">
+            <iframe
+              width="100%"
+              height="480px"
+              src="https://www.youtube.com/embed/iC424h6NtyA?controls=1"
+            >
+            </iframe>
+          </div>
 
-        <p id="reel" class="projectinfo"><span>------</span> Not so recent reel (2021) for Costra (Creative agency run with partners):</p> 
-        <div class="videoResponsive" class="workproject" id="recentvideo">
-        <iframe width="100%" height="480px"
-        src="https://www.youtube.com/embed/olBVt3xlsTA?controls=1">
-        </iframe> 
+          <br />
+
+          <p id="reel" class="projectinfo">
+            <span>------</span> Not so recent reel (2021) for Costra (Creative
+            agency run with partners):
+          </p>
+          <div class="videoResponsive" class="workproject" id="recentvideo">
+            <iframe
+              width="100%"
+              height="480px"
+              src="https://www.youtube.com/embed/olBVt3xlsTA?controls=1"
+            >
+            </iframe>
+          </div>
+          <br />
+
+          <p id="portfolio" class="projectinfo">
+            <span>------</span> Check out more of my work in my portfolio:
+          </p>
+          <div class="workproject">
+            <a href="https://rpared.github.io/portfolio/" target="_blank">
+              <img
+                id="portfolioicon"
+                class="workprojectlogo"
+                style="border: 1px solid rgb(245, 177, 150)"
+                src="images/portfolioicon.png"
+                alt="Roger's Portfolio"
+              />
+            </a>
+          </div>
         </div>
-        <br>
+      </section>
+      <br />
 
-        <p id="portfolio" class="projectinfo"><span>------</span> Check out more of my work in my portfolio:</p> 
+      <!-- PROJECTS -->
+      <a class="abtn">
+        <button class="btn" onclick="projects_load()">
+          <img class="wheelimg" src="images/circle.png" alt="Projects" />
+          <span class="btntext" id="projects-btn">Projects</span>
+        </button>
+      </a>
+      <div id="projects">
+        <p id="website" class="projectinfo">
+          <span>------</span> Costra (Agency run with partners) Website:
+        </p>
         <div class="workproject">
-          <a href="https://rpared.github.io/portfolio/" target="_blank">
-          <img id="portfolioicon" class="workprojectlogo" style="border: 1px solid rgb(245, 177, 150)" src="images/portfolioicon.png" alt="Roger's Portfolio">
+          <a href="https://www.costra.ec/2024" target="_blank">
+            <img
+              id="costrabrand"
+              class="aopus"
+              style="max-width: 200px"
+              src="images/costrabrand.png"
+              alt="Costra brand"
+            />
           </a>
         </div>
-          
-        
-        
-      </div>
-    </section>
-    <br>
 
-    <!-- PROJECTS -->
-    <a class="abtn">
-      <button class="btn" onclick="projects_load()">
-      <img class="wheelimg" src="images/circle.png" alt="Projects">
-      <span class="btntext" id="projects-btn">Projects</span>  
-      </button>
-    </a>
-  <div id="projects">
+        <p class="projectinfo">
+          <span>------</span> Apocalypsis Opus (Video series):
+        </p>
+        <div class="workproject">
+          <a href="https://www.apocalypsisopus.com/93/" target="_blank">
+            <img
+              class="aopus"
+              src="images/APOOPUS_iso4Videos.png"
+              alt="Apocalypsis Opus Project"
+              height="80"
+            />
+          </a>
+        </div>
 
-    <p id="website" class="projectinfo"><span>------</span> Costra (Agency run with partners) Website:</p>
-    <div class="workproject" >
-    <a href="https://www.costra.ec/2024" target="_blank">
-    <img id="costrabrand" class="aopus" style="max-width: 200px;"  src="images/costrabrand.png" alt="Costra brand">
-    </a>
-    </div>
+        <p class="projectinfo">
+          <span>------</span> Bípedo Rasurado (YouTube Channel):
+        </p>
+        <div class="workproject">
+          <a
+            href="https://www.youtube.com/channel/UCH3WXvuzRrFNVxgONLvCZHw"
+            target="_blank"
+          >
+            <img
+              class="aopus"
+              src="images/Brand.png"
+              alt="Bípedo Rasurado Project"
+              height="80"
+            />
+          </a>
+        </div>
 
-    <p class="projectinfo"><span>------</span> Apocalypsis Opus (Video series):</p>
-    <div class="workproject" >
-      <a href="https://www.apocalypsisopus.com/93/" target="_blank">
-        <img class="aopus" src="images/APOOPUS_iso4Videos.png" alt="Apocalypsis Opus Project" height="80">
-    </a>
-    </div>
+        <p class="projectinfo">
+          <span>------</span> Shaved Biped (YouTube Channel - Translated):
+        </p>
+        <div class="workproject">
+          <a
+            href="https://www.youtube.com/channel/UC0EyoxDgjXsPl4_faPk_8Lw"
+            target="_blank"
+          >
+            <img
+              class="aopus"
+              src="images/ShavedBipedBrand.png"
+              alt="Shaved Biped Project"
+              height="50"
+            />
+          </a>
+        </div>
 
-    <p class="projectinfo"><span>------</span> Bípedo Rasurado (YouTube Channel):</p>
-    <div class="workproject" >
-      <a href="https://www.youtube.com/channel/UCH3WXvuzRrFNVxgONLvCZHw" target="_blank">
-        <img class="aopus" src="images/Brand.png" alt="Bípedo Rasurado Project" height="80">
-    </a>
-    </div>
-
-    <p class="projectinfo"><span>------</span> Shaved Biped (YouTube Channel - Translated):</p>
-    <div class="workproject" >
-      <a href="https://www.youtube.com/channel/UC0EyoxDgjXsPl4_faPk_8Lw" target="_blank">
-        <img class="aopus" src="images/ShavedBipedBrand.png" alt="Shaved Biped Project" height="50">
-      </a>
-      </div>
-
-    <!-- <div id="contentcreation">
+        <!-- <div id="contentcreation">
       <div id="recent" class="projectinfo"><span>------</span> Recent example:</div>
         <div id="recentvideo" class="videoResponsive">
           <iframe width="100%" height="480px"
@@ -241,8 +373,8 @@
           </div>
         </div>
             <br> -->
-          
-            <!-- <div id="projecttext" class="projectinfo"><span>------</span> Projects:</div>
+
+        <!-- <div id="projecttext" class="projectinfo"><span>------</span> Projects:</div>
             <div id="projects">
               <a href="https://www.apocalypsisopus.com/93/" target="_blank">
                   <img class="aopus" src="images/APOOPUS_iso4Videos.png" alt="Apocalypsis Opus Project" height="80">
@@ -255,32 +387,45 @@
               </a>
             </div>
               <br><br> -->
-            
+      </div>
+      <br />
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <a class="emailbtn" href="mailto:rparedes@costra.ec">E-mail </a><br />
+      <div class="socialmedia">
+        <div class="socialmediaicon">
+          <a href="https://www.instagram.com/bipedorasurado/" target="_blank"
+            ><img src="images/instagram.png" alt="Instagram"
+          /></a>
+        </div>
+        <div class="socialmediaicon">
+          <a
+            href="https://www.linkedin.com/in/roger-paredes-294aa1119/"
+            target="_blank"
+            ><img src="images/linkedin.png" alt="LinkedIn"
+          /></a>
+        </div>
+        <div class="socialmediaicon github">
+          <a href="https://github.com/rpared" target="_blank"
+            ><img src="images/github.png" alt="GitHub"
+          /></a>
+        </div>
+      </div>
+      <br />
+      Roger Paredes - 2024
+    </footer>
+
+    <div id="popup">
+      <div id="popup-content">
+        <button type="button" id="closebtn">x</button>
+        This is my <strong>profile</strong>, it holds just a few samples, to
+        check out my portfolio
+        <a href="https://rpared.github.io/portfolio/" target="_blank">
+          <strong>click here.</strong>
+        </a>
+      </div>
     </div>
-    <br>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer"> 
-    <a class="emailbtn" href="mailto:rparedes@costra.ec">E-mail </a><br>
-    <div class="socialmedia">
-    <div class="socialmediaicon"><a href="https://www.instagram.com/bipedorasurado/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a></div>
-    <div class="socialmediaicon"><a href="https://www.linkedin.com/in/roger-paredes-294aa1119/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></div>
-    <div class="socialmediaicon github"><a href="https://github.com/rpared" target="_blank"><img src="images/github.png" alt="GitHub"></a></div>
-
-
-  </div>
-    <br> Roger Paredes - 2024
-  </footer>
-  
-  <div id="popup">
-    <div id="popup-content">
-      <button type="button" id="closebtn" >x</button>
-      This is my <strong>profile</strong>, it holds just a few samples, to check out my portfolio <a href="https://rpared.github.io/portfolio/" target="_blank"> <strong>click here.</strong> </a>
-    </div>
-  </div>
-
-</body>
-
+  </body>
 </html>
