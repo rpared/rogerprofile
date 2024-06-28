@@ -26,7 +26,7 @@ let aboutTextENG = `<p>
 Earth citizen, persistent, straightforward, hardworking and nonconformist. To me life is an adventure or an experience, a learning experience.
 <br>I was born in Quito, Ecuador (South America), became a <strong>Graphic Designer</strong> and <strong>Brand Designer</strong> in Buenos Aires, Argentina, now I am an IT student in Toronto, Canada.
 </p><p>
-I have 14+ years of experience with branding, overall design, marketing, communication strategies, advertising, content creation, campaign planning and cms websites. Have worked as a Graphic Designer, a Brand Manager and been self employed for 10 years handling clients with associates by the corp. name <em>"costra"</em>.
+I have 10+ years of experience with branding, overall design, marketing, communication strategies, advertising, content creation, campaign planning and cms websites. Have worked as a Graphic Designer, a Brand Manager and been self employed for 10 years handling clients with associates by the corp. name <em>"costra"</em>.
 <br>I am also an activist for animal and human liberation, a subject dear to my heart, content creation on the subject is one of my endeavours.
 </p>
 <ul>
@@ -40,7 +40,7 @@ let aboutTextESP = `<p>
 Ciudadano de la Tierra, perseverante, franco, trabajador e inconforme. Para mí la vida es una aventura o una experiencia, una experiencia de aprendizaje.
 <br>Nací en Quito, Ecuador (Sudamérica), me convertí en <strong>Diseñador Gráfico</strong> y <strong>Especialista en Branding</strong> en Buenos Aires, Argentina, hoy soy estudiante de IT en Toronto, Canadá.
 </p><p>
-Tengo más de 14 años de experiencia en branding, diseño general, marketing, estrategias de comunicación, publicidad, creación de contenido, planificación de campañas y portales cms. He traabjado como Diseñador Gráfico, Jefe de Marca y he sido autoempleado más de 10 años trabajando con clientes junto a mis socios bajo el nombre corporativo <em>"costra"</em>.
+Tengo más de 10 años de experiencia en branding, diseño general, marketing, estrategias de comunicación, publicidad, creación de contenido, planificación de campañas y portales cms. He traabjado como Diseñador Gráfico, Jefe de Marca y he sido autoempleado más de 10 años trabajando con clientes junto a mis socios bajo el nombre corporativo <em>"costra"</em>.
 <br>También soy un activista por la liberación animal y humana, asunto inevitable en mi corazón, la creación de contenido del tema se ha convertido en una misión para mí.
 </p>
 <ul>
